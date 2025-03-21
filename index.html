@@ -1,0 +1,2271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title id="pageTitle"></title>
+  <!-- ======================= 게임 설정 및 문제 데이터 (최상단 배치) ======================= -->
+<script>
+  /* 게임 설정 및 문제 데이터 */
+  const gameConfig = {
+    "gameTitle": "여러 가지 순열의 수",
+    "defaultScore": 10,
+    "bannerURL": "",
+    "randomizeQuestions": true,
+    "questions": [
+      {
+        "id": 1,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/1.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "720",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 2,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/2.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "288",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 3,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/3.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "72",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 4,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/4.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "17280",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 5,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/5.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "72",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 6,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/6.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "12",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 7,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/7.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "144",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 8,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/8.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "480",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 9,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/9.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "3600",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 10,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/10.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "1440",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 11,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/11.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "144",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 12,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/12.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "11520",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 13,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/13.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "12",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 14,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/14.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "12",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 15,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/15.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "6",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 16,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/16.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "720",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 17,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/17.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "1440",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 18,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/18.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "36",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 19,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/19.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "60",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 20,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/20.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "30",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 21,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/21.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "84",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 22,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/22.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "120",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 23,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/23.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "108",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 24,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s1-24.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/24.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "96",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 25,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s25-27.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/25.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "14",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 26,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s25-27.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/26.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "40",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 28,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s28-31.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/28.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "24351",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 29,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s28-31.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/29.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "42",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 30,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s28-31.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/30.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "60",
+        "type": "주관식",
+        "score": 10
+      },
+      {
+        "id": 31,
+        "images": [
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/s28-31.png?raw=true",
+          "https://github.com/hwimath2/imagrfile/blob/main/g1ygsy/31.png?raw=true"
+        ],
+        "passage": "",
+        "answer": "14",
+        "type": "주관식",
+        "score": 10
+      }
+    ]
+  };
+</script>
+  <style>
+    /* ======================= 디자인 변수 설정 (카테고리별 정리) ======================= */
+    :root {
+      /* ----- 게임 전체 배경 ----- */
+      --body-bg-start-color: #f5f7fa;          /* 배경 그라데이션 시작 색상 */
+      --body-bg-end-color: #c3cfe2;            /* 배경 그라데이션 끝 색상 */
+      --body-pattern-opacity: 0.3;              /* 배경 패턴 투명도 */
+
+      /* ----- 텍스트 설정 ----- */
+      --start-screen-title: "이름을 입력하고 게임을 시작하세요";  /* 시작 화면 제목 */
+      --player-name-placeholder: "이름을 입력하세요";            /* 이름 입력 필드 플레이스홀더 */
+      --start-button-text: "게임시작";                         /* 시작 버튼 텍스트 */
+      --next-button-text: "다음문제";                         /* 다음 버튼 텍스트 */
+      --complete-button-text: "완료";                         /* 완료 버튼 텍스트 */
+      --check-button-text: "확인";                           /* 확인 버튼 텍스트 */
+      --submit-button-text: "전송하기";                       /* 전송 버튼 텍스트 */
+      --result-title-text: "게임 종료";                       /* 결과 화면 제목 */
+      
+      /* ----- 시스템 메시지 ----- */
+      --success-message: "성공: 데이터가 성공적으로 전송되었습니다.";  /* 성공 메시지 */
+      --error-message: "오류: 데이터 전송에 실패했습니다.";           /* 오류 메시지 */
+      --network-error: "네트워크 오류: 서버와 통신할 수 없습니다.";    /* 네트워크 오류 메시지 */
+      
+      /* ----- 제목 스타일 ----- */
+      --game-title-color: #2c3e50;              /* 게임 제목 색상 */
+      --game-title-font-size: 32px;             /* 게임 제목 글자 크기 */
+      --game-title-bg-start: rgba(255,255,255,0.9);  /* 제목 배경 그라데이션 시작 색상 */
+      --game-title-bg-end: rgba(240,242,245,0.85);   /* 제목 배경 그라데이션 끝 색상 */
+      --game-title-border: 1px solid rgba(255,255,255,0.7);  /* 제목 테두리 */
+      --game-title-border-radius: 12px;         /* 제목 테두리 둥글기 */
+      --game-title-shadow: 2px 2px 2px rgba(0,0,0,0.2), 0 0 15px rgba(255,255,255,0.8); /* 제목 그림자 */
+      
+      /* ----- 제목 아래 선 ----- */
+      --title-line-width: 80px;                 /* 제목 아래 선 너비 */
+      --title-line-height: 3px;                 /* 제목 아래 선 높이 */
+      --title-line-position: -10px;             /* 제목 아래 선 위치 */
+      --title-line-radius: 3px;                 /* 제목 아래 선 둥글기 */
+      --title-line-start-color: #322D55;        /* 제목 아래 선 시작 색상 */
+      --title-line-end-color: #9b59b6;          /* 제목 아래 선 끝 색상 */
+      
+      /* ----- 기본 색상 설정 ----- */
+      --secondary-color: #2c3e50;   /* 제목, 문제 번호 등 주요 텍스트 색상 */
+      --light-gray: #f8f9fa;        /* 문제 컨테이너, 정보 패널의 배경색 */
+      --light-gray-2: #ecf0f1;      /* 문제 번호 배경색, 결과 화면 번호 배경색 */
+      
+      /* ----- 정답/오답 피드백 색상 설정 ----- */
+      --correct-color: #2ecc71;     /* 정답 표시 색상(초록색) */
+      --correct-dark: #27ae60;      /* 정답 색상의 어두운 버전(그라데이션용) */
+      --incorrect-color: #e74c3c;   /* 오답 표시 색상(빨간색) */
+      --incorrect-dark: #c0392b;    /* 오답 색상의 어두운 버전(그라데이션용) */
+      --feedback-delay: 1000;       /* 정답/오답 피드백 표시 지연 시간(ms) */
+      
+      /* ----- 버튼 공통 설정 ----- */
+      --button-font-size: 16px;     /* 버튼 글자 크기 */
+      --button-padding: 14px 24px;  /* 버튼 내부 여백 */
+      --button-margin: 10px 5px;    /* 버튼 마진 */
+      --button-transform: translateY(-4px);     /* 버튼 기본 높이 조정 */
+      --button-hover-transform: translateY(-5px); /* 버튼 호버 시 높이 조정 */
+      --button-active-transform: translateY(0px); /* 버튼 클릭 시 높이 조정 */
+      --disabled-color: #bdc3c7;    /* 비활성화된 버튼 색상 */
+      
+      /* ----- 시작 버튼 색상 ----- */
+      --start-button-color: #2ecc71; /* 시작 버튼 배경색(초록색) */
+      --start-button-dark: #27ae60;  /* 시작 버튼 어두운 버전 */
+      
+      /* ----- 다음 버튼 색상 ----- */
+      --next-button-color: #322D55; /* 다음 버튼 배경색 */
+      --next-button-dark: #262142;  /* 다음 버튼 어두운 버전 */
+      
+      /* ----- 완료 버튼 색상 ----- */
+      --complete-button-color: #8957a1; /* 완료 버튼 배경색 */
+      --complete-button-dark: #7a4391;  /* 완료 버튼 어두운 색상 */
+      
+      /* ----- 확인 버튼 색상 ----- */
+      --check-button-color: #3498db; /* 확인 버튼 배경색 */
+      --check-button-dark: #2980b9;  /* 확인 버튼 어두운 버전 */
+      
+      /* ----- 제출 버튼 색상 ----- */
+      --submit-button-color: #f39c12; /* 제출 버튼 배경색 */
+      --submit-button-dark: #d35400;  /* 제출 버튼 어두운 버전 */
+      
+      /* ----- 객관식 옵션 색상 ----- */
+      --option-color: #3498db;      /* 객관식 옵션 버튼 기본 색상 */
+      --option-dark: #2980b9;       /* 객관식 옵션 버튼 어두운 버전 */
+      --option-selected-color: #f39c12; /* 선택된 객관식 버튼 색상 */
+      --option-selected-dark: #d35400; /* 선택된 객관식 버튼 어두운 버전 */
+      
+      /* ----- 키보드 스타일 버튼 관련 색상 ----- */
+      --keyboard-top: #f5f5f5;      /* 키보드 스타일 버튼 상단 색상 */
+      --keyboard-side: #ddd;        /* 키보드 스타일 버튼 측면 색상 */
+      --keyboard-bottom: #bbb;      /* 키보드 스타일 버튼 하단 색상 */
+      
+      /* ----- 객관식 옵션 설정 ----- */
+      --option-min-width: 100px;    /* 객관식 버튼 최소 너비 */
+      --option-padding-h: 15px;     /* 객관식 버튼 좌우 패딩 */
+      --option-padding-v: 10px;     /* 객관식 버튼 상하 패딩 */
+      --option-font-size: 16px;     /* 객관식 버튼 글자 크기 */
+      --option-3d-angle: 10deg;     /* 객관식 3D 효과 기울기 각도 */
+      --option-selected-scale: 1.1; /* 선택된 옵션 확대 비율 */
+      --option-hover-scale: 1.05;   /* 호버 시 옵션 확대 비율 */
+      
+      /* ----- 주관식 피드백 효과 설정 ----- */
+      --correct-bg-color: rgba(46,204,113,0.2);     /* 정답 배경색 (20% 투명도) */
+      --correct-glow-color: rgba(46,204,113,0.5);   /* 정답 테두리 빛남 효과 (50% 투명도) */
+      --incorrect-bg-color: rgba(231,76,60,0.2);    /* 오답 배경색 (20% 투명도) */
+      --incorrect-glow-color: rgba(231,76,60,0.5);  /* 오답 테두리 빛남 효과 (50% 투명도) */
+      --answer-glow-intensity: 15px;                /* 테두리 빛남 효과 강도 */
+      
+      /* ----- 게임 플레이 요소 ----- */
+      --remaining-chances: 3;       /* 초기 남은 기회 수 */
+      --chance-width: 40px;         /* 기회 표시기 너비 */
+      --chance-height: 16px;        /* 기회 표시기 높이 */
+      --chance-border-radius: 4px;  /* 기회 표시기 테두리 둥글기 */
+      --chance-animation-duration: 3s; /* 기회 표시기 애니메이션 지속 시간 */
+      --chance-wave-duration: 2s;   /* 기회 표시기 물결 애니메이션 지속 시간 */
+      --chance-color: #2ecc71;      /* 남은 기회 표시 색상 */
+      --chance-lost-color: #ecf0f1; /* 잃은 기회 표시 색상 */
+      
+      /* ----- 진행 게이지 설정 ----- */
+      --progress-height: 15px;      /* 진행 게이지 높이 */
+      --progress-border-radius: 8px; /* 진행 게이지 테두리 둥글기 */
+      --progress-left-color: #00D2F7;  /* 진행 게이지 왼쪽 색상 */
+      --progress-right-color: #7DF9AA; /* 진행 게이지 오른쪽 색상 */
+      --progress-bg-color: rgba(236,240,241,0.8); /* 진행 게이지 배경색 */
+      --progress-shine: rgba(255,255,255,0.35); /* 진행 게이지 반짝임 효과 색상 */
+      --progress-animation-duration: 0.7s; /* 진행 게이지 애니메이션 지속 시간 */
+      --progress-shine-duration: 2s; /* 진행 게이지 반짝임 애니메이션 지속 시간 */
+      --progress-gradient: linear-gradient(90deg, var(--progress-left-color) 0%, var(--progress-right-color) 100%); /* 진행 게이지 그라데이션 */
+      
+      /* ----- 완료 애니메이션 설정 ----- */
+      --complete-animation-duration: 1.5s; /* 완료 애니메이션 지속 시간 */
+      --particle-count: 50;         /* 완료 애니메이션 파티클 개수 */
+      --particle-size-min: 5px;     /* 파티클 최소 크기 */
+      --particle-size-max: 15px;    /* 파티클 최대 크기 */
+      --particle-animation-duration: 1s; /* 파티클 애니메이션 지속 시간 */
+      --particle-distance-min: 50px; /* 파티클 최소 이동 거리 */
+      --particle-distance-max: 230px; /* 파티클 최대 이동 거리 */
+      
+      /* ----- 결과 화면 색상 ----- */
+      --result-info-bg: rgba(255,255,255,0.7);  /* 결과 정보 배경색 */
+      --result-score-bg: linear-gradient(120deg, var(--next-button-color) 0%, #9b59b6 46%, #FFCC70 100%); /* 결과 점수 배경 */
+      --score-highlight-color: #FFCC70; /* 최종 점수 하이라이트 색상 */
+      --result-animation-duration: 0.5s; /* 결과 화면 애니메이션 지속 시간 */
+      --score-pulsate-duration: 2s; /* 점수 표시 펄스 애니메이션 지속 시간 */
+      --score-shine-duration: 3s;   /* 점수 표시 반짝임 애니메이션 지속 시간 */
+      
+      /* ----- 파티클 효과 색상 ----- */
+      --particle-color-1: #00D2F7;  /* 파티클 효과 색상 1 */
+      --particle-color-2: #322D55;  /* 파티클 효과 색상 2 */
+      --particle-color-3: #FFCC70;  /* 파티클 효과 색상 3 */
+      --particle-color-4: #4CAF50;  /* 파티클 효과 색상 4 */
+      --particle-color-5: #9b59b6;  /* 파티클 효과 색상 5 */
+      
+      /* ----- 폰트 설정 ----- */
+      --main-font: 'Noto Sans KR', sans-serif; /* 기본 폰트 */
+      --base-font-size: 16px;       /* 기본 폰트 크기 */
+      --small-font-size: 0.9rem;    /* 작은 글씨 크기(정보 라벨용) */
+      --medium-font-size: 1.2rem;   /* 중간 글씨 크기(문제 번호용) */
+      --large-font-size: 1.3rem;    /* 큰 글씨 크기(정보 패널 값) */
+      --x-large-font-size: 2rem;    /* 매우 큰 글씨 크기(결과 점수용) */
+      
+      /* ----- 크기 및 간격 설정 ----- */
+      --container-max-width: 1100px; /* 컨테이너 최대 너비 */
+      --container-width: 95%;       /* 컨테이너 기본 너비(비율) */
+      --container-padding: 30px;    /* 컨테이너 내부 여백 */
+      --item-margin: 15px;          /* 아이템 기본 마진 */
+      --small-gap: 10px;            /* 작은 간격 */
+      --large-gap: 25px;            /* 큰 간격 */
+      --question-min-height: 500px; /* 문제 컨테이너 최소 높이 */
+      
+      /* ----- 테두리 및 그림자 ----- */
+      --border-radius-small: 5px;   /* 작은 테두리 둥글기 */
+      --border-radius-medium: 8px;  /* 중간 테두리 둥글기(버튼용) */
+      --border-radius-large: 10px;  /* 큰 테두리 둥글기(컨테이너용) */
+      --border-radius-x-large: 12px; /* 매우 큰 테두리 둥글기 */
+      --border-radius-circle: 50%;  /* 원형 테두리(객관식 버튼용) */
+      --box-shadow-light: 0 2px 5px rgba(0,0,0,0.1); /* 가벼운 그림자 */
+      --box-shadow-medium: 0 4px 10px rgba(0,0,0,0.1); /* 중간 그림자 */
+      --box-shadow-heavy: 0 8px 20px rgba(0,0,0,0.15); /* 진한 그림자 */
+      
+      /* ----- 입력 필드 설정 ----- */
+      --input-padding: 15px 20px;   /* 입력 필드 내부 여백 */
+      --input-font-size: 16px;      /* 입력 필드 글자 크기 */
+      --input-focus-shadow: 0 5px 15px rgba(52,152,219,0.2); /* 입력 필드 포커스 그림자 */
+      --input-focus-transform: translateY(-2px); /* 입력 필드 포커스 시 위치 이동 */
+
+      /* ----- 반응형 디자인 설정 ----- */
+      --mobile-breakpoint: 480px;    /* 모바일 기기 분기점 */
+    }
+    
+    /* ======================= 공통 배경 및 레이아웃 ======================= */
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: var(--main-font);
+      background: linear-gradient(135deg, var(--body-bg-start-color) 0%, var(--body-bg-end-color) 100%);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+    
+    /* 전체 배경에 반짝이는 효과 적용 */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2393c5fd' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+      opacity: var(--body-pattern-opacity);
+      z-index: -1;
+    }
+    
+    /* ======================= 배너 & 제목 ======================= */
+    .banner {
+      width: 100%;
+      text-align: center;
+      background-color: white;
+      padding: 15px 0;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: var(--box-shadow-light);
+      display: none;
+    }
+    .banner img {
+      max-width: 100%;
+      height: auto;
+    }
+    #gameTitle {
+      text-align: center;
+      font-size: var(--game-title-font-size);
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: var(--game-title-color);
+      text-shadow: var(--game-title-shadow);
+      position: relative;
+      padding: 15px 30px;
+      border-radius: var(--game-title-border-radius);
+      background: linear-gradient(135deg, var(--game-title-bg-start) 0%, var(--game-title-bg-end) 100%);
+      backdrop-filter: blur(4px);
+      box-shadow: var(--box-shadow-medium), inset 0 -2px 5px rgba(255,255,255,0.7);
+      display: inline-block;
+      letter-spacing: 1px;
+      transform: perspective(100px) translateZ(5px);
+      border: var(--game-title-border);
+    }
+    #gameTitle::after {
+      content: '';
+      position: absolute;
+      bottom: var(--title-line-position);
+      left: 50%;
+      transform: translateX(-50%);
+      width: var(--title-line-width);
+      height: var(--title-line-height);
+      background: linear-gradient(90deg, var(--title-line-start-color), var(--title-line-end-color));
+      border-radius: var(--title-line-radius);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    /* ======================= 컨테이너 & 정보 패널 ======================= */
+    .container {
+      max-width: var(--container-max-width);
+      width: var(--container-width);
+      margin: 0 auto;
+      background-color: rgba(255,255,255,0.9);
+      border-radius: var(--border-radius-x-large);
+      box-shadow: var(--box-shadow-medium);
+      padding: var(--container-padding);
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .container:hover { 
+      box-shadow: var(--box-shadow-heavy); 
+    }
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+      transform: rotate(45deg);
+      animation: shine-container 8s infinite linear;
+    }
+    @keyframes shine-container {
+      0% { top: -100%; left: -100%; }
+      100% { top: 100%; left: 100%; }
+    }
+    
+    /* 정보 패널 */
+    .info-panel {
+      display: flex;
+      justify-content: center;
+      background-color: var(--light-gray);
+      padding: 15px;
+      border-radius: var(--border-radius-large);
+      margin-bottom: 25px;
+      box-shadow: var(--box-shadow-light);
+    }
+    .info-item {
+      text-align: center;
+      padding: 0 15px;
+      flex: 1;
+    }
+    .info-label {
+      font-weight: 500;
+      margin-bottom: 5px;
+      color: var(--secondary-color);
+      font-size: var(--small-font-size);
+      text-transform: uppercase;
+    }
+    .info-value {
+      font-size: var(--large-font-size);
+      color: var(--secondary-color);
+      font-weight: bold;
+    }
+    
+    /* 기회 표시 스타일 */
+    .chances-container {
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+      margin-top: 5px;
+    }
+    
+    .chance-indicator {
+      width: var(--chance-width);
+      height: var(--chance-height);
+      background-color: var(--chance-color);
+      border-radius: var(--chance-border-radius);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .chance-indicator::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      animation: chance-shine var(--chance-animation-duration) infinite;
+    }
+    
+    .chance-indicator::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, 
+                rgba(255,255,255,0.2) 0%, 
+                rgba(255,255,255,0) 40%, 
+                rgba(255,255,255,0) 60%, 
+                rgba(255,255,255,0.2) 100%);
+      opacity: 0.5;
+      animation: chance-wave var(--chance-wave-duration) infinite alternate;
+    }
+    
+    @keyframes chance-shine {
+      0% { left: -100%; }
+      20%, 100% { left: 100%; }
+    }
+    
+    @keyframes chance-wave {
+      0% { opacity: 0.3; transform: translateY(-2px); }
+      100% { opacity: 0.7; transform: translateY(2px); }
+    }
+    
+    .chance-indicator.lost {
+      background-color: var(--chance-lost-color);
+    }
+    
+    .chance-indicator.lost::before,
+    .chance-indicator.lost::after {
+      display: none;
+    }
+    
+    /* ======================= 시작 화면 ======================= */
+    #startSection {
+      text-align: center;
+      padding: 40px 0;
+      background-color: rgba(255,255,255,0.8);
+      border-radius: var(--border-radius-x-large);
+      box-shadow: var(--box-shadow-medium);
+      max-width: 600px;
+      margin: 40px auto;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+    #startSection::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.3) 10%, transparent 60%);
+      animation: pulse-start 5s infinite linear;
+      z-index: -1;
+    }
+    @keyframes pulse-start {
+      0% { transform: scale(0.95); opacity: 0.7; }
+      50% { transform: scale(1.05); opacity: 0.3; }
+      100% { transform: scale(0.95); opacity: 0.7; }
+    }
+    .start-title {
+      font-size: 28px;
+      margin-bottom: 30px;
+      position: relative;
+      display: inline-block;
+      color: var(--secondary-color);
+    }
+    .start-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--next-button-color), transparent);
+    }
+    .input-field {
+      padding: var(--input-padding);
+      font-size: var(--input-font-size);
+      border: none;
+      border-radius: 10px;
+      width: 300px;
+      margin-right: 10px;
+      outline: none;
+      transition: all 0.3s;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1), 
+                  inset 0 2px 5px rgba(0,0,0,0.05);
+      background-color: white;
+      color: var(--secondary-color);
+    }
+    .input-field:focus {
+      box-shadow: var(--input-focus-shadow), 
+                  inset 0 2px 5px rgba(0,0,0,0.05);
+      transform: var(--input-focus-transform);
+    }
+    .input-field::placeholder {
+      color: #bdc3c7;
+      transition: all 0.3s;
+    }
+    .input-field:focus::placeholder {
+      opacity: 0.7;
+      transform: translateX(5px);
+    }
+    
+    /* ======================= 키보드 스타일 버튼 ======================= */
+    .btn {
+      padding: var(--button-padding);
+      font-size: var(--button-font-size);
+      border: none;
+      border-radius: var(--border-radius-medium);
+      cursor: pointer;
+      margin: var(--button-margin);
+      font-weight: 500;
+      position: relative;
+      color: white;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+      transition: all 0.15s ease;
+      background-color: var(--keyboard-top);
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 2px 0 rgba(0,0,0,0.1),
+        0 4px 0 var(--keyboard-bottom),
+        0 6px 0 rgba(0,0,0,0.1),
+        0 8px 0 rgba(0,0,0,0.1),
+        0 0 10px rgba(0,0,0,0.2);
+      transform: var(--button-transform);
+      overflow: hidden;
+    }
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.2), transparent);
+      border-radius: 7px 7px 0 0;
+    }
+    .btn:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      background: linear-gradient(to top, rgba(0,0,0,0.1), transparent);
+      border-radius: 0 0 7px 7px;
+    }
+    .btn:hover {
+      transform: var(--button-hover-transform);
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 3px 0 rgba(0,0,0,0.1),
+        0 5px 0 var(--keyboard-bottom),
+        0 7px 0 rgba(0,0,0,0.1),
+        0 9px 0 rgba(0,0,0,0.1),
+        0 0 12px rgba(0,0,0,0.2);
+    }
+    .btn:active {
+      transform: var(--button-active-transform);
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 1px 0 rgba(0,0,0,0.1),
+        0 2px 0 var(--keyboard-bottom),
+        0 0 5px rgba(0,0,0,0.2);
+      transition: all 0.05s ease;
+    }
+    .btn:disabled {
+      background-color: var(--disabled-color);
+      cursor: not-allowed;
+      transform: translateY(1px);    /* 음각 효과 */
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 1px 0 rgba(0,0,0,0.1),
+        0 2px 0 #aaa,                /* 줄어든 그림자 */
+        0 0 3px rgba(0,0,0,0.1);
+      opacity: 0.7;                  /* 투명도 추가 */
+      filter: grayscale(40%);        /* 그레이스케일 적용 */
+      text-shadow: none;             /* 텍스트 그림자 제거 */
+    }
+    .btn:disabled:hover {
+      transform: translateY(1px);    /* hover 효과 제거 */
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 1px 0 rgba(0,0,0,0.1),
+        0 2px 0 #aaa,
+        0 0 3px rgba(0,0,0,0.1);
+    }
+    #startButton { 
+      background-color: var(--start-button-color);
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 2px 0 rgba(0,0,0,0.1),
+        0 4px 0 var(--start-button-dark),
+        0 6px 0 rgba(0,0,0,0.1),
+        0 8px 0 rgba(0,0,0,0.1),
+        0 0 10px rgba(0,0,0,0.2);
+    }
+    #startButton:hover {
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 3px 0 rgba(0,0,0,0.1),
+        0 5px 0 var(--start-button-dark),
+        0 7px 0 rgba(0,0,0,0.1),
+        0 9px 0 rgba(0,0,0,0.1),
+        0 0 12px rgba(0,0,0,0.2);
+    }
+    #nextButton { 
+      background-color: var(--next-button-color);
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 2px 0 rgba(0,0,0,0.1),
+        0 4px 0 var(--next-button-dark),
+        0 6px 0 rgba(0,0,0,0.1),
+        0 8px 0 rgba(0,0,0,0.1),
+        0 0 10px rgba(0,0,0,0.2);
+    }
+    #nextButton:hover {
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 3px 0 rgba(0,0,0,0.1),
+        0 5px 0 var(--next-button-dark),
+        0 7px 0 rgba(0,0,0,0.1),
+        0 9px 0 rgba(0,0,0,0.1),
+        0 0 12px rgba(0,0,0,0.2);
+    }
+    #nextButton.complete-button { 
+      background-color: var(--complete-button-color); 
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 2px 0 rgba(0,0,0,0.1),
+        0 4px 0 var(--complete-button-dark),
+        0 6px 0 rgba(0,0,0,0.1),
+        0 8px 0 rgba(0,0,0,0.1),
+        0 0 10px rgba(0,0,0,0.2);
+    }
+    #nextButton.complete-button:hover {
+      transform: var(--button-hover-transform);
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 3px 0 rgba(0,0,0,0.1),
+        0 5px 0 var(--complete-button-dark),
+        0 7px 0 rgba(0,0,0,0.1),
+        0 9px 0 rgba(0,0,0,0.1),
+        0 0 12px rgba(137, 87, 161, 0.4);
+    }
+    #submitButton { 
+      background-color: var(--submit-button-color);
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 2px 0 rgba(0,0,0,0.1),
+        0 4px 0 var(--submit-button-dark),
+        0 6px 0 rgba(0,0,0,0.1),
+        0 8px 0 rgba(0,0,0,0.1),
+        0 0 10px rgba(0,0,0,0.2);
+    }
+    #submitButton:hover {
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 3px 0 rgba(0,0,0,0.1),
+        0 5px 0 var(--submit-button-dark),
+        0 7px 0 rgba(0,0,0,0.1),
+        0 9px 0 rgba(0,0,0,0.1),
+        0 0 12px rgba(0,0,0,0.2);
+    }
+    #checkButton { 
+      background-color: var(--check-button-color);
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 2px 0 rgba(0,0,0,0.1),
+        0 4px 0 var(--check-button-dark),
+        0 6px 0 rgba(0,0,0,0.1),
+        0 8px 0 rgba(0,0,0,0.1),
+        0 0 10px rgba(0,0,0,0.2);
+    }
+    #checkButton:hover {
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 3px 0 rgba(0,0,0,0.1),
+        0 5px 0 var(--check-button-dark),
+        0 7px 0 rgba(0,0,0,0.1),
+        0 9px 0 rgba(0,0,0,0.1),
+        0 0 12px rgba(0,0,0,0.2);
+    }
+    
+    /* ======================= 객관식 옵션 스타일 ======================= */
+    .option {
+      border: none;
+      border-radius: var(--border-radius-medium);
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.15s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: var(--option-padding-v) var(--option-padding-h);
+      font-size: var(--option-font-size);
+      margin: var(--button-margin);
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(ellipse at 30% 30%, var(--option-color) 0%, var(--option-dark) 100%);
+      color: white;
+      text-align: center;
+      transform: perspective(500px) rotateX(var(--option-3d-angle));
+      box-shadow: 
+        0 6px 12px rgba(0,0,0,0.15), 
+        0 3px 5px rgba(0,0,0,0.12), 
+        inset 0 -4px 5px rgba(0,0,0,0.2),
+        inset 0 2px 4px rgba(255,255,255,0.5);
+    }
+    
+    .option::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at 30% 30%, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    
+    .option::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60%;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,0));
+      transform: translateZ(1px);
+    }
+    
+    .option:hover {
+      background: radial-gradient(ellipse at 30% 30%, var(--option-color) 30%, var(--option-dark) 100%);
+      transform: perspective(500px) rotateX(calc(var(--option-3d-angle) + 5deg)) translateY(-3px) scale(var(--option-hover-scale));
+      box-shadow: 
+        0 10px 20px rgba(0,0,0,0.2), 
+        0 5px 8px rgba(0,0,0,0.15), 
+        inset 0 -4px 5px rgba(0,0,0,0.2),
+        inset 0 2px 4px rgba(255,255,255,0.5);
+    }
+    
+    .option.selected {
+      background: radial-gradient(ellipse at 30% 30%, var(--option-selected-color) 0%, var(--option-selected-dark) 100%);
+      transform: perspective(500px) rotateX(calc(var(--option-3d-angle) + 5deg)) scale(var(--option-selected-scale));
+      box-shadow: 
+        0 8px 25px rgba(0,0,0,0.15), 
+        0 5px 10px rgba(0,0,0,0.1), 
+        0 0 15px rgba(255, 165, 0, 0.5), 
+        inset 0 -4px 5px rgba(0,0,0,0.2),
+        inset 0 2px 4px rgba(255,255,255,0.5);
+    }
+    
+    /* 정답/오답 피드백 스타일 */
+    .option.correct {
+      background: radial-gradient(ellipse at 30% 30%, var(--correct-color) 0%, var(--correct-dark) 100%);
+      transform: perspective(500px) rotateX(calc(var(--option-3d-angle) + 5deg)) scale(var(--option-selected-scale));
+      box-shadow: 
+        0 8px 25px rgba(0,0,0,0.15), 
+        0 5px 10px rgba(0,0,0,0.1), 
+        0 0 15px rgba(46, 204, 113, 0.5), 
+        inset 0 -4px 5px rgba(0,0,0,0.2),
+        inset 0 2px 4px rgba(255,255,255,0.5);
+    }
+    
+    .option.incorrect {
+      background: radial-gradient(ellipse at 30% 30%, var(--incorrect-color) 0%, var(--incorrect-dark) 100%);
+      transform: perspective(500px) rotateX(calc(var(--option-3d-angle) + 5deg)) scale(var(--option-selected-scale));
+      box-shadow: 
+        0 8px 25px rgba(0,0,0,0.15), 
+        0 5px 10px rgba(0,0,0,0.1), 
+        0 0 15px rgba(231, 76, 60, 0.5), 
+        inset 0 -4px 5px rgba(0,0,0,0.2),
+        inset 0 2px 4px rgba(255,255,255,0.5);
+    }
+    
+    /* ======================= 문제 영역 ======================= */
+    #gameSection {
+      display: none;
+      width: 100%;
+    }
+    .question-container {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+      background-color: var(--light-gray);
+      border-radius: var(--border-radius-large);
+      box-shadow: var(--box-shadow-medium);
+      padding: 20px;
+      min-height: var(--question-min-height);
+      overflow: hidden;
+      position: relative;
+    }
+    .question-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--next-button-color), #9b59b6);
+      border-radius: 10px 10px 0 0;
+    }
+    .passage {
+      flex: 0 0 38%;
+      padding-right: 10px;
+      max-height: 600px;
+      overflow-y: auto;
+      border-right: 1px solid #eee;
+      display: none;
+    }
+    .passage img { 
+      width: 100%; 
+      height: auto; 
+      display: block; 
+    }
+    
+    .question {
+      flex: 1;
+      text-align: center;
+      padding: 15px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .question.with-passage { 
+      margin-left: 10px; 
+    }
+    .question-number {
+      font-size: var(--medium-font-size);
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: var(--secondary-color);
+      background-color: var(--light-gray-2);
+      padding: 8px 15px;
+      border-radius: 20px;
+      display: inline-block;
+      box-shadow: var(--box-shadow-light);
+    }
+    .question-images {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+      max-width: 800px;
+    }
+    .image-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0;
+      line-height: 0;
+    }
+    .question-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0;
+      padding: 0;
+      vertical-align: bottom;
+      border-radius: var(--border-radius-small);
+      box-shadow: var(--box-shadow-light);
+      transition: all 0.3s ease;
+    }
+    .question-image + .question-image {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      margin-top: -1px;
+      box-shadow: none;
+    }
+    .question-image:first-child {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    
+    /* 옵션 영역 (객관식) */
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 30px 0;
+      width: 100%;
+    }
+    .options.vertical {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    /* 주관식 입력 영역 */
+    .input-answer {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0;
+      width: 100%;
+    }
+    .input-answer-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 15px;
+      align-items: center;
+    }
+    .answer-input {
+      padding: var(--input-padding);
+      font-size: var(--input-font-size);
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      outline: none;
+      transition: all 0.3s;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1), 
+                  inset 0 2px 5px rgba(0,0,0,0.05);
+      background-color: white;
+      color: var(--secondary-color);
+      box-sizing: border-box;
+    }
+    .answer-input:focus {
+      box-shadow: var(--input-focus-shadow), 
+                  inset 0 2px 5px rgba(0,0,0,0.05);
+      transform: var(--input-focus-transform);
+    }
+    
+    /* 주관식 정답/오답 피드백 스타일 - 통일된 방식 */
+    .answer-input.correct {
+      background-color: var(--correct-bg-color);
+      border-color: var(--correct-color);
+      box-shadow: 0 0 var(--answer-glow-intensity) var(--correct-glow-color);
+    }
+    
+    .answer-input.incorrect {
+      background-color: var(--incorrect-bg-color);
+      border-color: var(--incorrect-color);
+      box-shadow: 0 0 var(--answer-glow-intensity) var(--incorrect-glow-color);
+    }
+    
+    /* 진행률 게이지 */
+    .progress-container {
+      width: 100%;
+      height: var(--progress-height);
+      background-color: var(--progress-bg-color);
+      border-radius: var(--progress-border-radius);
+      margin: 30px 0 15px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background-image: var(--progress-gradient);
+      transition: width var(--progress-animation-duration) cubic-bezier(0.22,0.61,0.36,1.2);
+      border-radius: var(--progress-border-radius);
+      position: relative;
+      box-shadow: var(--box-shadow-light);
+      overflow: hidden;
+    }
+    .progress-bar::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, var(--progress-shine), transparent);
+      animation: shine var(--progress-shine-duration) infinite;
+      z-index: 2;
+    }
+    .progress-bar::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -100%;
+      width: 200%;
+      height: 200%;
+      background-image: 
+        repeating-linear-gradient(
+          45deg, 
+          rgba(255,255,255,0.1) 0%, 
+          rgba(255,255,255,0.1) 5%, 
+          rgba(255,255,255,0.3) 10%, 
+          rgba(255,255,255,0.1) 15%, 
+          rgba(255,255,255,0.1) 20%
+        );
+      animation: wave 8s infinite linear;
+      z-index: 1;
+    }
+    .progress-container::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        repeating-linear-gradient(
+          -45deg, 
+          rgba(255,255,255,0.05) 0%, 
+          rgba(255,255,255,0.05) 7%, 
+          rgba(255,255,255,0.2) 14%, 
+          rgba(255,255,255,0.05) 21%, 
+          rgba(255,255,255,0.05) 28%
+        );
+      animation: wave-reverse 10s infinite linear;
+      border-radius: var(--progress-border-radius);
+      z-index: 0;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    @keyframes shine {
+      0% { left: -100%; }
+      20% { left: 100%; }
+      100% { left: 100%; }
+    }
+    @keyframes wave {
+      0% { transform: rotate(0) translateX(-25%); }
+      100% { transform: rotate(360deg) translateX(-25%); }
+    }
+    @keyframes wave-reverse {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-360deg); }
+    }
+    .progress-indicator {
+      position: absolute;
+      right: 10px;
+      top: -25px;
+      background-color: var(--secondary-color);
+      color: white;
+      font-size: 0.8rem;
+      padding: 3px 10px;
+      border-radius: 12px;
+      box-shadow: var(--box-shadow-light);
+      opacity: 0.9;
+      transform: translateY(0);
+      transition: transform 0.3s ease;
+    }
+    
+    /* 완료 애니메이션 */
+    @keyframes explode {
+      0% { transform: scale(1); filter: brightness(1); }
+      20% { transform: scale(1.05); filter: brightness(1.3); }
+      40% { transform: scale(1); filter: brightness(1); }
+      60% { transform: scale(1.08); filter: brightness(1.4); }
+      80% { transform: scale(1); filter: brightness(1.2); }
+      100% { transform: scale(1.03); filter: brightness(1.5); }
+    }
+    
+    .completed-animation {
+      animation: explode var(--complete-animation-duration) ease-out forwards;
+    }
+    
+    .particle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      opacity: 0;
+      animation: particle-animation var(--particle-animation-duration) cubic-bezier(0,0.5,0.5,1) forwards;
+    }
+    @keyframes particle-animation {
+      0% { 
+        opacity: 1; 
+        transform: translate(0, 0); 
+      }
+      100% { 
+        opacity: 0; 
+        transform: translate(var(--translateX), var(--translateY)); 
+      }
+    }
+    
+    /* ======================= 결과 화면 ======================= */
+    #resultSection {
+      display: none;
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(135deg, var(--body-bg-start-color) 0%, var(--body-bg-end-color) 100%);
+      border-radius: var(--border-radius-x-large);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 700px;
+      margin: 40px auto;
+      position: relative;
+      overflow: hidden;
+      animation: fadeIn var(--result-animation-duration) ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    #resultSection::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      right: -50px;
+      bottom: -50px;
+      background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2393c5fd' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+      opacity: var(--body-pattern-opacity);
+      z-index: -1;
+    }
+    .result-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 25px;
+      color: var(--secondary-color);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding-bottom: 10px;
+      position: relative;
+      display: inline-block;
+    }
+    .result-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: var(--title-line-width);
+      height: var(--title-line-height);
+      background: linear-gradient(90deg, var(--title-line-start-color), var(--title-line-end-color));
+      border-radius: var(--title-line-radius);
+    }
+    .result-info {
+      font-size: 20px;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: var(--result-info-bg);
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      backdrop-filter: blur(4px);
+      transition: all 0.3s ease;
+    }
+    #finalTime {
+      font-weight: 600;
+      color: #2c3e50;
+    }
+    #finalScore {
+      font-size: var(--x-large-font-size);
+      font-weight: bold;
+      margin: 25px auto;
+      padding: 20px;
+      background: var(--result-score-bg);
+      color: white;
+      border-radius: var(--border-radius-x-large);
+      box-shadow: var(--box-shadow-heavy);
+      max-width: 400px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      animation: pulsate var(--score-pulsate-duration) infinite alternate;
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    #finalScore::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+      transform: skewX(-25deg);
+      animation: shine-score var(--score-shine-duration) infinite;
+    }
+    @keyframes shine-score {
+      0% { left: -100%; }
+      45%, 100% { left: 100%; }
+    }
+    @keyframes pulsate {
+      0% { transform: scale(1); box-shadow: var(--box-shadow-heavy); }
+      100% { transform: scale(1.05); box-shadow: 0 12px 25px rgba(76,175,80,0.3); }
+    }
+    #finalScore:hover { transform: translateY(-5px); }
+    
+    /* 서버 응답 메시지 스타일 */
+    .server-message {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 600;
+      animation: fadeIn var(--result-animation-duration) ease-in-out;
+    }
+    .server-message.success {
+      color: var(--correct-color);
+    }
+    .server-message.error {
+      color: var(--incorrect-color);
+    }
+    
+    /* ======================= 로딩 스피너 ======================= */
+    .loading-spinner {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid var(--next-button-color);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* ======================= 반응형 디자인 ======================= */
+    @media (max-width: var(--mobile-breakpoint)) {
+      .container { padding: 10px; width: 100%; border-radius: 8px; }
+      #gameTitle { font-size: 24px; }
+      .info-panel { padding: 8px 3px; margin-bottom: 15px; }
+      .info-label { font-size: 0.7rem; margin-bottom: 3px; }
+      .info-value { font-size: 1rem; }
+      .btn, .option { padding: 10px 15px; font-size: 0.9rem; margin: 8px 3px; }
+      .input-field, .answer-input { width: 100%; }
+      #startSection { padding: 20px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- 배너 영역 -->
+  <div class="banner" id="banner"></div>
+  <!-- 게임 제목 -->
+  <h1 id="gameTitle"></h1>
+  <div class="loading-spinner" id="loadingSpinner">
+    <div class="spinner"></div>
+  </div>
+  <div class="container">
+    <!-- 시작 화면 -->
+    <div id="startSection">
+      <h2 class="start-title">이름을 입력하고 게임을 시작하세요</h2>
+      <div>
+        <input class="input-field" id="playerName" placeholder="이름을 입력하세요" type="text"/>
+        <button class="btn" id="startButton">게임시작</button>
+      </div>
+    </div>
+    <!-- 게임 진행 화면 -->
+    <div id="gameSection">
+      <div class="info-panel">
+        <div class="info-item">
+          <div class="info-label">경과시간</div>
+          <div class="info-value" id="timer">00:00</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">현재 점수</div>
+          <div class="info-value" id="currentScore">0</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">남은 기회</div>
+          <div class="chances-container">
+            <div class="chance-indicator" id="chance1"></div>
+            <div class="chance-indicator" id="chance2"></div>
+            <div class="chance-indicator" id="chance3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="question-container" id="questionContainer">
+        <div class="passage" id="passage"></div>
+        <div class="question" id="question">
+          <div class="question-number" id="questionNumber">문제 1</div>
+          <div class="question-images" id="questionImages"></div>
+          <div class="options" id="multipleChoice"></div>
+          <div class="input-answer" id="shortAnswer"></div>
+          <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <div class="progress-indicator" id="progressIndicator">0/0</div>
+          </div>
+          <button class="btn" id="nextButton" disabled>다음문제</button>
+        </div>
+      </div>
+    </div>
+    <!-- 결과 화면 -->
+    <div id="resultSection">
+      <div class="result-title">게임 종료</div>
+      <div class="result-info" id="finalScore"></div>
+      <div class="result-info" id="finalTime"></div>
+      <button class="btn" id="submitButton">전송하기</button>
+      <div id="serverMessage" class="server-message"></div>
+    </div>
+  </div>
+  
+  <script>
+    /* 텍스트 설정 */
+    const START_SCREEN_TITLE = "이름을 입력하고 게임을 시작하세요";  /* 시작 화면 제목 */
+    const PLAYER_NAME_PLACEHOLDER = "이름을 입력하세요";            /* 이름 입력 필드 플레이스홀더 */
+    const START_BUTTON_TEXT = "게임시작";                         /* 시작 버튼 텍스트 */
+    const NEXT_BUTTON_TEXT = "다음문제";                         /* 다음 버튼 텍스트 */
+    const COMPLETE_BUTTON_TEXT = "완료";                         /* 완료 버튼 텍스트 */
+    const CHECK_BUTTON_TEXT = "확인";                           /* 확인 버튼 텍스트 */
+    const SUBMIT_BUTTON_TEXT = "전송하기";                       /* 전송 버튼 텍스트 */
+    const RESULT_TITLE_TEXT = "게임 종료";                       /* 결과 화면 제목 */
+    
+    const SUCCESS_MESSAGE = "성공: 데이터가 성공적으로 전송되었습니다.";  /* 성공 메시지 */
+    const ERROR_MESSAGE = "오류: 데이터 전송에 실패했습니다.";           /* 오류 메시지 */
+    const NETWORK_ERROR = "네트워크 오류: 서버와 통신할 수 없습니다.";    /* 네트워크 오류 메시지 */
+    
+    /* 게임 설정 */
+    const gameTitle = gameConfig.gameTitle;            /* 게임 제목 */
+    const questions = gameConfig.questions;            /* 모든 문제 배열 */
+    const defaultScore = gameConfig.defaultScore || 10; /* 기본 점수 */
+    const bannerURL = gameConfig.bannerURL || "";      /* 배너 이미지 URL */
+    const randomizeQuestions = gameConfig.randomizeQuestions || false; /* 문제 순서 랜덤화 여부 */
+    
+    /* 전역 변수 선언 */
+    let currentQuestion = 0;         /* 현재 문제 인덱스 */
+    let score = 0;                  /* 현재 점수 */
+    let elapsedTime = 0;            /* 경과 시간(초) */
+    let timerInterval = null;       /* 타이머 인터벌 ID */
+    let startTime = 0;              /* 시작 시간 타임스탬프 */
+    let gameOver = false;           /* 게임 종료 여부 */
+    let userAnswers = [];           /* 사용자 답변 기록 */
+    let answerSubmitted = false;    /* 현재 문제 답변 제출 여부 */
+    let completedQuestions = 0;     /* 완료된 문제 수 */
+    let remainingChances = 3;       /* 남은 기회 수 */
+    let selectedOptions = [];       /* 선택된 객관식 옵션들(복수선택) */
+    let player = "";                /* 플레이어 이름 */
+   
+   /* DOM 요소 참조 (최상단에 선언하여 이후 코드에서 안전하게 사용) */
+   const elements = {
+     banner: document.getElementById("banner"),
+     gameTitle: document.getElementById("gameTitle"),
+     startSection: document.getElementById('startSection'),
+     gameSection: document.getElementById('gameSection'),
+     resultSection: document.getElementById('resultSection'),
+     playerName: document.getElementById('playerName'),
+     startButton: document.getElementById('startButton'),
+     timer: document.getElementById('timer'),
+     currentScore: document.getElementById('currentScore'),
+     questionContainer: document.getElementById('questionContainer'),
+     passage: document.getElementById('passage'),
+     question: document.getElementById('question'),
+     questionNumber: document.getElementById('questionNumber'),
+     questionImages: document.getElementById('questionImages'),
+     multipleChoice: document.getElementById('multipleChoice'),
+     shortAnswer: document.getElementById('shortAnswer'),
+     nextButton: document.getElementById('nextButton'),
+     submitButton: document.getElementById('submitButton'),
+     finalScore: document.getElementById('finalScore'),
+     finalTime: document.getElementById('finalTime'),
+     serverMessage: document.getElementById('serverMessage'),
+     progressBar: document.getElementById('progressBar'),
+     progressIndicator: document.getElementById('progressIndicator'),
+     loadingSpinner: document.getElementById('loadingSpinner'),
+     chance1: document.getElementById('chance1'),
+     chance2: document.getElementById('chance2'),
+     chance3: document.getElementById('chance3')
+   };
+   
+   /* 타이머 함수 */
+   const timerFunctions = {
+     start() {
+       startTime = Date.now();           /* 현재 시간을 시작 시간으로 설정 */
+       timerInterval = setInterval(this.update, 1000); /* 1초마다 update 함수 실행 */
+     },
+     update() {
+       elapsedTime = Math.floor((Date.now() - startTime) / 1000); /* 경과 시간 계산 */
+       const m = Math.floor(elapsedTime / 60).toString().padStart(2, '0'); /* 분 */
+       const s = (elapsedTime % 60).toString().padStart(2, '0');           /* 초 */
+       elements.timer.textContent = `${m}:${s}`;                           /* 타이머 표시 */
+     },
+     stop() { clearInterval(timerInterval); },                             /* 타이머 정지 */
+     formatTime(sec) {
+       const m = Math.floor(sec / 60);                                     /* 분 */
+       const s = sec % 60;                                                 /* 초 */
+       return `${m}분 ${s}초`;                                             /* 포맷 변환 */
+     }
+   };
+   
+   /* 게임 초기화 함수 */
+   function resetGame() {
+     if(randomizeQuestions) { questions.sort(() => Math.random() - 0.5); } /* 문제 랜덤 섞기 */
+     
+     /* 변수 초기화 */
+     currentQuestion = 0; 
+     score = 0; 
+     elapsedTime = 0; 
+     gameOver = false;
+     userAnswers = []; 
+     answerSubmitted = false; 
+     completedQuestions = 0;
+     remainingChances = 3; 
+     selectedOptions = [];
+     
+     /* UI 초기화 */
+     elements.timer.textContent = "00:00";
+     elements.currentScore.textContent = "0";
+     updateChancesDisplay();
+     updateProgressBar();
+   }
+   
+   // 진행률 게이지 업데이트 함수
+   function updateProgressBar() {
+     const progress = (completedQuestions / questions.length) * 100;       /* 진행률 계산 */
+     elements.progressBar.style.width = `${progress}%`;                    /* 진행 바 너비 설정 */
+     elements.progressIndicator.textContent = `${completedQuestions}/${questions.length}`; /* 진행 상태 표시 */
+   }
+   
+   // 파티클 효과 생성
+   function createCompletionParticles() {
+     const container = document.querySelector('.progress-container');
+     const rect = container.getBoundingClientRect();
+     const centerX = rect.left + rect.width / 2;                           /* 중앙 X 좌표 */
+     const centerY = rect.top + rect.height / 2;                           /* 중앙 Y 좌표 */
+     
+     /* 파티클 생성 */
+     for (let i = 0; i < parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-count')); i++) {
+       const particle = document.createElement('div');
+       particle.className = 'particle';
+       
+      /* 랜덤 색상 설정 */
+       const colors = [
+         getComputedStyle(document.documentElement).getPropertyValue('--particle-color-1').trim(),
+         getComputedStyle(document.documentElement).getPropertyValue('--particle-color-2').trim(),
+         getComputedStyle(document.documentElement).getPropertyValue('--particle-color-3').trim(),
+         getComputedStyle(document.documentElement).getPropertyValue('--particle-color-4').trim(),
+         getComputedStyle(document.documentElement).getPropertyValue('--particle-color-5').trim()
+       ];
+       particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+       
+       /* 랜덤 크기 설정 */
+       const minSize = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-size-min'));
+       const maxSize = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-size-max'));
+       const size = Math.random() * (maxSize - minSize) + minSize;
+       particle.style.width = `${size}px`;
+       particle.style.height = `${size}px`;
+       
+       /* 랜덤 방향 및 거리 설정 */
+       const angle = Math.random() * Math.PI * 2;
+       const minDistance = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-distance-min'));
+       const maxDistance = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-distance-max'));
+       const distance = Math.random() * (maxDistance - minDistance) + minDistance;
+       const translateX = Math.cos(angle) * distance;
+       const translateY = Math.sin(angle) * distance;
+       
+       particle.style.setProperty('--translateX', `${translateX}px`);
+       particle.style.setProperty('--translateY', `${translateY}px`);
+       particle.style.left = `${centerX - rect.left}px`;
+       particle.style.top = `${centerY - rect.top}px`;
+       particle.style.animationDelay = `${Math.random() * 0.3}s`;
+       
+       container.appendChild(particle);
+       
+       /* 애니메이션 후 파티클 제거 */
+       const animationDuration = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--particle-animation-duration')) * 1000 + 500;
+       setTimeout(() => { particle.remove(); }, animationDuration);
+     }
+   }
+   
+   // 완료 애니메이션 실행
+   function triggerCompletionAnimation() {
+     return new Promise(resolve => {
+       elements.progressBar.style.width = "100%";                         /* 진행 바 100%로 설정 */
+       setTimeout(() => {
+         elements.progressBar.classList.add('completed-animation');        /* 애니메이션 클래스 추가 */
+         createCompletionParticles();                                      /* 파티클 효과 생성 */
+         const animationDuration = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--complete-animation-duration')) * 1000 + 300;
+         setTimeout(() => { resolve(); }, animationDuration);              /* 애니메이션 완료 후 Promise 해결 */
+       }, 300);
+     });
+   }
+   
+   // 남은 기회 업데이트
+   function updateChancesDisplay() {
+     elements.chance1.className = remainingChances >= 1 ? 'chance-indicator' : 'chance-indicator lost';
+     elements.chance2.className = remainingChances >= 2 ? 'chance-indicator' : 'chance-indicator lost';
+     elements.chance3.className = remainingChances >= 3 ? 'chance-indicator' : 'chance-indicator lost';
+   }
+   
+   // 문제 로드 함수
+   function loadQuestion(qIndex) {
+     answerSubmitted = false;                                              /* 답변 제출 상태 초기화 */
+     selectedOptions = [];                                                 /* 선택된 옵션 초기화 */
+     elements.nextButton.disabled = true;                                  /* 다음문제 버튼 비활성화 */
+     
+     /* 기존 확인 버튼 제거 */
+     const existingConfirm = document.getElementById('checkButton');
+     if(existingConfirm && existingConfirm.parentNode) { existingConfirm.parentNode.removeChild(existingConfirm); }
+     
+     /* 객관식/주관식 영역 초기화 */
+     elements.multipleChoice.innerHTML = "";
+     elements.shortAnswer.innerHTML = "";
+     
+     const q = questions[qIndex];                                          /* 현재 문제 가져오기 */
+     if(!q) { endGame(true); return; }                                     /* 문제가 없으면 게임 종료 */
+     
+     elements.questionNumber.textContent = `문제 ${qIndex + 1}`;           /* 문제 번호 표시 */
+     
+     /* 보기(passage) 설정 */
+     if(q.passage) {
+       elements.passage.style.display = 'block';
+       elements.passage.innerHTML = `<img src="${q.passage}" alt="보기" style="width:100%;">`;
+       elements.question.classList.add('with-passage');
+     } else { 
+       elements.passage.style.display = 'none'; 
+       elements.question.classList.remove('with-passage');
+     }
+     
+     /* 문제 이미지 설정 */
+     elements.questionImages.innerHTML = "";
+     const imgContainer = document.createElement('div');
+     imgContainer.className = "image-container";
+     
+     q.images.forEach((imgUrl, idx) => {
+       const img = document.createElement('img');
+       img.src = imgUrl;
+       img.alt = `문제 ${qIndex + 1} 이미지 ${idx + 1}`;
+       img.className = "question-image";
+       img.onload = function() {
+         if (idx > 0) {
+           const prevImg = imgContainer.querySelector(`img[alt="문제 ${qIndex + 1} 이미지 ${idx}"]`);
+           if (prevImg) { prevImg.style.marginBottom = "0"; }
+         }
+       };
+       imgContainer.appendChild(img);
+     });
+     elements.questionImages.appendChild(imgContainer);
+     
+     if(q.type === "객관식") {
+       elements.multipleChoice.style.display = "flex";
+       elements.shortAnswer.style.display = "none";
+       
+       // 옵션 설정
+       let options = [];
+       if(q.customOptions && Array.isArray(q.customOptions) && q.customOptions.length > 0) {
+         options = q.customOptions.slice(0, 5);                           /* 최대 5개 커스텀 옵션 */
+       } else { 
+         options = ["1", "2", "3", "4", "5"];                             /* 기본 옵션 */
+       }
+       
+       // 옵션 너비 계산 로직
+       const isNumericOptions = options.every(opt => /^[1-5]$/.test(opt.trim()));
+       const minWidth = 60;                                               /* 숫자만 있을 때 적절한 크기 */
+       const maxWidth = 250;                                              /* 최대 너비 제한 */
+       let optionWidth;
+       
+       if (isNumericOptions) {
+         optionWidth = minWidth;                                          /* 기본형(1,2,3,4,5) 선택지는 작은 크기 적용 */
+       } else {
+         /* 텍스트 선택지는 최장 길이에 맞추되 범위 내에서 제한 */
+         let maxLen = 0;
+         options.forEach(opt => { if(opt.length > maxLen) maxLen = opt.length; });
+         
+         /* 너비 계산: 글자수 * 글자 너비 + 여백 */
+         const contentWidth = (maxLen * 10) + 30;
+         
+         /* 최종 너비: 최소-최대 범위 내에서 결정 */
+         optionWidth = Math.max(minWidth, Math.min(contentWidth, maxWidth));
+       }
+       
+       /* 옵션 너비가 컨테이너의 30% 이상이면 세로 배치로 전환 */
+       if(optionWidth >= elements.questionContainer.clientWidth * 0.3) {
+         elements.multipleChoice.classList.add('vertical');
+       } else { 
+         elements.multipleChoice.classList.remove('vertical'); 
+       }
+       
+       /* 옵션 생성 */
+       options.forEach((optText, index) => {
+         const optDiv = document.createElement('div');
+         optDiv.className = "option";
+         optDiv.style.width = optionWidth + "px";
+         optDiv.setAttribute("data-option", (index+1).toString());
+         optDiv.textContent = optText;
+         optDiv.addEventListener('click', handleOptionClick);
+         elements.multipleChoice.appendChild(optDiv);
+       });
+       
+       /* 복수정답 여부에 따라 확인 버튼 생성 */
+       if(Array.isArray(q.answer) && q.answer.length > 1) { 
+         createConfirmButton(handleMultipleChoiceCheck); 
+       }
+     } else if(q.type === "주관식") {
+       elements.multipleChoice.style.display = "none";
+       elements.shortAnswer.style.display = "flex";
+       let inputHTML = '<div class="input-answer-fields">';
+       
+       if(Array.isArray(q.answer)) {
+         /* 복수 입력 필드 생성 로직 */
+         let maxLen = 0;
+         q.answer.slice(0,5).forEach(ans => { if(ans.toString().length > maxLen) maxLen = ans.toString().length; });
+         const baseWidth = 300, computedWidth = (maxLen * 10) + 20;
+         const finalWidth = Math.max(baseWidth, computedWidth);
+         
+         for(let i = 0; i < Math.min(q.answer.length,5); i++) {
+           const placeholder = (q.placeholders && q.placeholders[i]) ? q.placeholders[i] : `답변 ${i+1}`;
+           inputHTML += `<div style="width: ${finalWidth}px; margin: 5px 0;">
+                           <div style="text-align: left; margin-bottom: 3px; font-size: 0.9rem; color: #666;">답변 ${i+1}</div>
+                           <input class="answer-input" id="answerInput${i+1}" placeholder="${placeholder}" type="text"/>
+                         </div>`;
+         }
+      } else {
+          /* 단일 입력 필드 생성 */
+          inputHTML += `<div style="width: 300px; margin: 5px 0;">
+                          <input class="answer-input" id="answerInput" placeholder="답을 입력하세요" type="text"/>
+                        </div>`;
+        }
+        inputHTML += '</div>';
+        elements.shortAnswer.innerHTML = inputHTML;
+        
+        /* 입력 필드에 이벤트 리스너 추가 */
+        document.querySelectorAll('.answer-input').forEach(input => {
+          input.addEventListener('input', handleShortAnswerInput);
+          input.addEventListener('keyup', (e) => {
+            if(e.key === 'Enter' && document.getElementById('checkButton') && !document.getElementById('checkButton').disabled) {
+              document.getElementById('checkButton').click();
+            }
+          });
+        });
+        
+        createConfirmButton(handleCheckButtonClick);
+      }
+      
+      /* 마지막 문제인 경우 완료 버튼으로 변경 */
+      if(qIndex === questions.length - 1) {
+        elements.nextButton.textContent = COMPLETE_BUTTON_TEXT;
+        elements.nextButton.classList.add('complete-button');
+      } else {
+        elements.nextButton.textContent = NEXT_BUTTON_TEXT;
+        elements.nextButton.classList.remove('complete-button');
+      }
+    }
+    
+    /* 확인 버튼 생성 함수 */
+    function createConfirmButton(callback) {
+      const existing = document.getElementById('checkButton');
+      if(existing && existing.parentNode) { existing.parentNode.removeChild(existing); }
+      
+      const btn = document.createElement('button');
+      btn.className = "btn"; 
+      btn.id = "checkButton"; 
+      btn.textContent = CHECK_BUTTON_TEXT; 
+      btn.disabled = true;
+      btn.addEventListener('click', callback);
+      
+      if(elements.multipleChoice.style.display !== "none") {
+        elements.multipleChoice.parentNode.insertBefore(btn, elements.multipleChoice.nextSibling);
+      } else {
+        elements.shortAnswer.parentNode.insertBefore(btn, elements.shortAnswer.nextSibling);
+      }
+    }
+    
+    /* 객관식 옵션 클릭 처리 */
+    function handleOptionClick(e) {
+      if(gameOver || answerSubmitted) return;
+      
+      const selectedOption = e.currentTarget;
+      const q = questions[currentQuestion];
+      const userAnswer = selectedOption.getAttribute('data-option');
+      
+      if(Array.isArray(q.answer) && q.answer.length > 1) {
+        /* 복수 선택 로직 */
+        if(selectedOptions.includes(userAnswer)) {
+          selectedOptions = selectedOptions.filter(opt => opt !== userAnswer);
+          selectedOption.classList.remove("selected");
+        } else {
+          selectedOptions.push(userAnswer);
+          selectedOption.classList.add("selected");
+        }
+        
+        /* 하나 이상 선택되었을 때 확인 버튼 활성화 */
+        const confirmBtn = document.getElementById('checkButton');
+        if(confirmBtn) { confirmBtn.disabled = (selectedOptions.length === 0); }
+      } else {
+        /* 단일 선택 로직 - 바로 정답 확인 */
+        answerSubmitted = true;
+        
+        if(userAnswer === q.answer.toString()) {
+          /* 정답인 경우 */
+          selectedOption.classList.add("correct");
+          score += q.score || defaultScore;
+          elements.currentScore.textContent = score;
+        } else {
+          /* 오답인 경우 */
+          selectedOption.classList.add("incorrect");
+          remainingChances--;
+          updateChancesDisplay();
+          
+          if(remainingChances <= 0) { 
+            setTimeout(() => { endGame(false); }, parseInt(getComputedStyle(document.documentElement).getPropertyValue('--feedback-delay'))); 
+            return; 
+          }
+        }
+        
+        /* 사용자 답변 기록 */
+        userAnswers.push({
+          questionId: q.id,
+          userAnswer: userAnswer,
+          correctAnswer: q.answer,
+          isCorrect: (userAnswer === q.answer.toString()),
+          score: (userAnswer === q.answer.toString()) ? (q.score || defaultScore) : 0
+        });
+        
+        elements.nextButton.disabled = false;  /* 다음문제 버튼 활성화 */
+      }
+    }
+    
+    /* 복수 객관식 확인 버튼 처리 */
+    function handleMultipleChoiceCheck() {
+      if(gameOver || answerSubmitted) return;
+      
+      const q = questions[currentQuestion];
+      answerSubmitted = true;
+      
+      /* 정답 확인 */
+      let allCorrect = true;
+      
+      /* 선택한 개수와 정답 개수가 다르면 오답 */
+      if(selectedOptions.length !== q.answer.length) { allCorrect = false; }
+      else { 
+        /* 선택한 모든 항목이 정답에 포함되어 있는지 확인 */
+        selectedOptions.forEach(opt => { 
+          if(!q.answer.includes(opt)) { allCorrect = false; } 
+        }); 
+      }
+      
+      /* 옵션별 정답/오답 표시 */
+      document.querySelectorAll('.option').forEach(opt => {
+        const optVal = opt.getAttribute('data-option');
+        
+        if(selectedOptions.includes(optVal)) {
+          if(q.answer.includes(optVal)) { 
+            opt.classList.add("correct"); 
+          } else { 
+            opt.classList.add("incorrect"); 
+          }
+        }
+      });
+      
+      if(allCorrect) { 
+        /* 모두 정답인 경우 */
+        score += q.score || defaultScore; 
+        elements.currentScore.textContent = score; 
+      } else { 
+        /* 오답이 있는 경우 */
+        remainingChances--; 
+        updateChancesDisplay(); 
+        
+        if(remainingChances <= 0) { 
+          setTimeout(() => { endGame(false); }, parseInt(getComputedStyle(document.documentElement).getPropertyValue('--feedback-delay'))); 
+          return; 
+        } 
+      }
+      
+      /* 확인 버튼 비활성화, 다음 버튼 활성화 */
+      document.getElementById('checkButton').disabled = true;
+      elements.nextButton.disabled = false;
+      
+      /* 사용자 답변 기록 */
+      userAnswers.push({
+        questionId: q.id,
+        userAnswer: selectedOptions,
+        correctAnswer: q.answer,
+        isCorrect: allCorrect,
+        score: allCorrect ? (q.score || defaultScore) : 0
+      });
+    }
+    
+    /* 주관식 입력 처리 */
+    function handleShortAnswerInput() {
+      if(gameOver || answerSubmitted) return;
+      
+     /* 모든 입력 필드가 채워졌는지 확인 */
+      const inputs = document.querySelectorAll('.answer-input');
+      let allFilled = true;
+      
+      inputs.forEach(input => { 
+        if(input.value.trim() === "") { allFilled = false; } 
+      });
+      
+      /* 확인 버튼 활성화/비활성화 */
+      const confirmBtn = document.getElementById('checkButton');
+      if(confirmBtn) { confirmBtn.disabled = !allFilled; }
+    }
+    
+    /* 주관식 확인 버튼 처리 */
+    function handleCheckButtonClick() {
+      if(gameOver || answerSubmitted) return;
+      
+      const q = questions[currentQuestion];
+      const inputs = document.querySelectorAll('.answer-input');
+      answerSubmitted = true;
+      
+      let isCorrect = true;
+      let userAnswerArray = [];
+      
+      /* 각 입력 필드별 정답 확인 */
+      inputs.forEach((input, index) => {
+        const userAns = input.value.trim().toLowerCase();
+        userAnswerArray.push(userAns);
+        
+        let correctAns = "";
+        if(Array.isArray(q.answer)) { 
+          correctAns = q.answer[index].toString().toLowerCase(); 
+        } else { 
+          correctAns = q.answer.toString().toLowerCase(); 
+        }
+        
+        // 모든 공백을 제거하여 비교 (앞, 뒤, 중간 모두 무시)
+        if(userAns.replace(/\s+/g, '') !== correctAns.replace(/\s+/g, '')) { 
+          isCorrect = false; 
+          input.classList.add('incorrect');
+        } else { 
+          input.classList.add('correct');
+        }
+      });
+      
+      if(isCorrect) { 
+        /* 정답인 경우 */
+        score += q.score || defaultScore; 
+        elements.currentScore.textContent = score; 
+      } else { 
+        /* 오답인 경우 */
+        remainingChances--; 
+        updateChancesDisplay(); 
+        
+        if(remainingChances <= 0) { 
+          setTimeout(() => { endGame(false); }, parseInt(getComputedStyle(document.documentElement).getPropertyValue('--feedback-delay'))); 
+          return; 
+        } 
+      }
+      
+      /* 확인 버튼 비활성화, 다음 버튼 활성화 */
+      document.getElementById('checkButton').disabled = true;
+      elements.nextButton.disabled = false;
+      
+      /* 사용자 답변 기록 */
+      userAnswers.push({
+        questionId: q.id,
+        userAnswer: userAnswerArray,
+        correctAnswer: q.answer,
+        isCorrect: isCorrect,
+        score: isCorrect ? (q.score || defaultScore) : 0
+      });
+    }
+    
+    /* 다음 문제 버튼 이벤트 */
+    elements.nextButton.addEventListener('click', () => {
+      currentQuestion++;
+      completedQuestions++;
+      updateProgressBar();
+      
+      if(currentQuestion >= questions.length) { 
+        triggerCompletionAnimation().then(() => { endGame(true); });
+      } else { 
+        loadQuestion(currentQuestion); 
+      }
+    });
+    
+    /* 시작 버튼 이벤트 */
+    elements.startButton.addEventListener('click', () => {
+      const name = elements.playerName.value.trim();
+      if(name === "") return;  /* 이름이 입력되지 않으면 시작하지 않음 */
+      
+      player = name;
+      elements.startSection.style.display = "none";
+      elements.gameSection.style.display = "block";
+      timerFunctions.start();  /* 타이머 시작 */
+      resetGame();            /* 게임 초기화 */
+      loadQuestion(currentQuestion);  /* 첫 문제 로드 */
+    });
+    
+    /* 서버 데이터 전송 함수 */
+    async function sendDataWithRetry(url, data, { timeout = 5000, retries = 3 } = {}) {
+      for (let attempt = 1; attempt <= retries; attempt++) {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), timeout);
+        
+        try {
+          const response = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+            signal: controller.signal
+          });
+          
+          clearTimeout(timer);
+          const responseData = await response.json();
+          
+          if (response.ok) {
+            return responseData;
+          } else {
+            throw new Error(ERROR_MESSAGE);
+          }
+        } catch (error) {
+          clearTimeout(timer);
+          
+          if (attempt === retries) {
+            throw error;
+          }
+
+          /* 지수 백오프: 시도 횟수에 따라 대기 시간 증가 */
+          await new Promise(res => setTimeout(res, 1000 * attempt));
+        }
+      }
+    }
+    
+    /* 전송 버튼 이벤트 */
+    elements.submitButton.addEventListener('click', async () => {
+      const game = gameConfig.gameTitle;
+      const name = elements.playerName.value.trim();
+      const finalScore = score, finalElapsedTime = elapsedTime;
+      elements.loadingSpinner.style.display = "flex";
+      elements.serverMessage.textContent = "";
+      elements.serverMessage.className = "server-message";
+      
+      try {
+        await sendDataWithRetry("https://us-central1-record-f420d.cloudfunctions.net/report", {
+          game: game,
+          name: name,
+          score: parseInt(finalScore, 10),
+          elapsedTime: parseInt(finalElapsedTime, 10)
+        }, { timeout: 5000, retries: 3 });
+        
+        // 성공 메시지 표시
+        elements.serverMessage.textContent = SUCCESS_MESSAGE;
+        elements.serverMessage.classList.add("success");
+        elements.submitButton.disabled = true;
+      } catch (error) {
+        // 오류 메시지 표시
+        const errorMsg = (error.message === 'The operation was aborted') ? 
+          NETWORK_ERROR : ERROR_MESSAGE;
+        elements.serverMessage.textContent = errorMsg;
+        elements.serverMessage.classList.add("error");
+        // 실패 시 버튼 활성화 유지 (재시도 가능)
+      } finally {
+        elements.loadingSpinner.style.display = "none";
+      }
+    });
+    
+    /* 게임 종료 함수 */
+    function endGame(completed) {
+      gameOver = true;
+      timerFunctions.stop();
+      elements.gameSection.style.display = "none";
+      elements.resultSection.style.display = "block";
+      
+      // 결과 표시 향상
+      const maxScore = questions.reduce((sum, q) => sum + (q.score || defaultScore), 0);
+      elements.finalScore.textContent = `최종 점수: ${score}점 / ${maxScore}점`;
+      elements.finalTime.textContent = `총 소요 시간: ${timerFunctions.formatTime(elapsedTime)}`;
+    }
+    
+    /* 페이지 로드 시 초기화 */
+    window.onload = () => {
+      document.getElementById("pageTitle").textContent = gameTitle;
+      elements.gameTitle.textContent = gameTitle;
+      
+      // 배너 설정
+      if (bannerURL) {
+        elements.banner.style.display = "block";
+        elements.banner.innerHTML = `<img src="${bannerURL}" alt="배너">`;
+      }
+    };
+  </script>
+</body>
+</html>
