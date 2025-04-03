@@ -5,7 +5,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title id="pageTitle"></title>
   <!-- ======================= 게임 설정 및 문제 데이터 (최상단 배치) ======================= -->
-<script>
+  <script>
   /* 게임 설정 및 문제 데이터 */
   const gameConfig = {
     "gameTitle": "여러 가지 순열의 수",
@@ -350,155 +350,161 @@
     /* ======================= 디자인 변수 설정 (카테고리별 정리) ======================= */
     :root {
       /* ----- 게임 전체 배경 ----- */
-      --body-bg-start-color: #f5f7fa;          /* 배경 그라데이션 시작 색상 */
-      --body-bg-end-color: #c3cfe2;            /* 배경 그라데이션 끝 색상 */
-      --body-pattern-opacity: 0.3;              /* 배경 패턴 투명도 */
+      --body-bg-start-color: #f5f7fa;      /* 배경 그라데이션 시작 색상 */
+      --body-bg-end-color: #c3cfe2;        /* 배경 그라데이션 끝 색상 */
+      --body-pattern-opacity: 0.3;          /* 배경 패턴 투명도 */
 
       /* ----- 텍스트 설정 ----- */
-      --start-screen-title: "이름을 입력하고 게임을 시작하세요";  /* 시작 화면 제목 */
-      --player-name-placeholder: "이름을 입력하세요";            /* 이름 입력 필드 플레이스홀더 */
-      --start-button-text: "게임시작";                         /* 시작 버튼 텍스트 */
-      --next-button-text: "다음문제";                         /* 다음 버튼 텍스트 */
-      --complete-button-text: "완료";                         /* 완료 버튼 텍스트 */
-      --check-button-text: "확인";                           /* 확인 버튼 텍스트 */
-      --submit-button-text: "전송하기";                       /* 전송 버튼 텍스트 */
-      --result-title-text: "게임 종료";                       /* 결과 화면 제목 */
-      
+      --start-screen-title: "이름을 ";    /* 시작 화면 제목 */
+      --player-name-placeholder: "이름을 입력하세요";       /* 이름 입력 필드 플레이스홀더 */
+      --start-button-text: "게임시작";            /* 시작 버튼 텍스트 */
+      --next-button-text: "다음문제";               /* 다음 버튼 텍스트 */
+      --complete-button-text: "완료";               /* 완료 버튼 텍스트 */
+      --check-button-text: "확인";                /* 확인 버튼 텍스트 */
+      --submit-button-text: "전송하기";             /* 전송 버튼 텍스트 */
+      --result-title-text: "게임 종료";               /* 결과 화면 제목 */
+
       /* ----- 시스템 메시지 ----- */
       --success-message: "성공: 데이터가 성공적으로 전송되었습니다.";  /* 성공 메시지 */
-      --error-message: "오류: 데이터 전송에 실패했습니다.";           /* 오류 메시지 */
-      --network-error: "네트워크 오류: 서버와 통신할 수 없습니다.";    /* 네트워크 오류 메시지 */
-      
+      --error-message: "오류: 데이터 전송에 실패했습니다.";      /* 오류 메시지 */
+      --network-error: "네트워크 오류: 서버와 통신할 수 없습니다.";   /* 네트워크 오류 메시지 */
+
       /* ----- 제목 스타일 ----- */
-      --game-title-color: #2c3e50;              /* 게임 제목 색상 */
-      --game-title-font-size: 32px;             /* 게임 제목 글자 크기 */
+      --game-title-color: #2c3e50;           /* 게임 제목 색상 */
+      --game-title-font-size: 32px;           /* 게임 제목 글자 크기 */
       --game-title-bg-start: rgba(255,255,255,0.9);  /* 제목 배경 그라데이션 시작 색상 */
       --game-title-bg-end: rgba(240,242,245,0.85);   /* 제목 배경 그라데이션 끝 색상 */
       --game-title-border: 1px solid rgba(255,255,255,0.7);  /* 제목 테두리 */
-      --game-title-border-radius: 12px;         /* 제목 테두리 둥글기 */
+      --game-title-border-radius: 12px;           /* 제목 테두리 둥글기 */
       --game-title-shadow: 2px 2px 2px rgba(0,0,0,0.2), 0 0 15px rgba(255,255,255,0.8); /* 제목 그림자 */
-      
+
       /* ----- 제목 아래 선 ----- */
-      --title-line-width: 80px;                 /* 제목 아래 선 너비 */
-      --title-line-height: 3px;                 /* 제목 아래 선 높이 */
-      --title-line-position: -10px;             /* 제목 아래 선 위치 */
-      --title-line-radius: 3px;                 /* 제목 아래 선 둥글기 */
-      --title-line-start-color: #322D55;        /* 제목 아래 선 시작 색상 */
-      --title-line-end-color: #9b59b6;          /* 제목 아래 선 끝 색상 */
-      
+      --title-line-width: 80px;             /* 제목 아래 선 너비 */
+      --title-line-height: 3px;             /* 제목 아래 선 높이 */
+      --title-line-position: -10px;           /* 제목 아래 선 위치 */
+      --title-line-radius: 3px;             /* 제목 아래 선 둥글기 */
+      --title-line-start-color: #322D55;     /* 제목 아래 선 시작 색상 */
+      --title-line-end-color: #9b59b6;       /* 제목 아래 선 끝 색상 */
+
       /* ----- 기본 색상 설정 ----- */
-      --secondary-color: #2c3e50;   /* 제목, 문제 번호 등 주요 텍스트 색상 */
-      --light-gray: #f8f9fa;        /* 문제 컨테이너, 정보 패널의 배경색 */
-      --light-gray-2: #ecf0f1;      /* 문제 번호 배경색, 결과 화면 번호 배경색 */
-      
+      --secondary-color: #2c3e50;  /* 제목, 문제 번호 등 주요 텍스트 색상 */
+      --light-gray: #f8f9fa;       /* 문제 컨테이너, 정보 패널의 배경색 */
+      --light-gray-2: #ecf0f1;     /* 문제 번호 배경색, 결과 화면 번호 배경색 */
+
       /* ----- 정답/오답 피드백 색상 설정 ----- */
-      --correct-color: #2ecc71;     /* 정답 표시 색상(초록색) */
-      --correct-dark: #27ae60;      /* 정답 색상의 어두운 버전(그라데이션용) */
-      --incorrect-color: #e74c3c;   /* 오답 표시 색상(빨간색) */
-      --incorrect-dark: #c0392b;    /* 오답 색상의 어두운 버전(그라데이션용) */
-      --feedback-delay: 1000;       /* 정답/오답 피드백 표시 지연 시간(ms) */
-      
+      --correct-color: #2ecc71;      /* 정답 표시 색상(초록색) */
+      --correct-dark: #27ae60;       /* 정답 색상의 어두운 버전(그라데이션용) */
+      --incorrect-color: #e74c3c;    /* 오답 표시 색상(빨간색) */
+      --incorrect-dark: #c0392b;     /* 오답 색상의 어두운 버전(그라데이션용) */
+      --feedback-delay: 1000;         /* 정답/오답 피드백 표시 지연 시간(ms) */
+
       /* ----- 버튼 공통 설정 ----- */
-      --button-font-size: 16px;     /* 버튼 글자 크기 */
+      --button-font-size: 16px;       /* 버튼 글자 크기 */
       --button-padding: 14px 24px;  /* 버튼 내부 여백 */
       --button-margin: 10px 5px;    /* 버튼 마진 */
       --button-transform: translateY(-4px);     /* 버튼 기본 높이 조정 */
       --button-hover-transform: translateY(-5px); /* 버튼 호버 시 높이 조정 */
       --button-active-transform: translateY(0px); /* 버튼 클릭 시 높이 조정 */
-      --disabled-color: #bdc3c7;    /* 비활성화된 버튼 색상 */
-      
+      --disabled-color: #bdc3c7;     /* 비활성화된 버튼 색상 */
+
       /* ----- 시작 버튼 색상 ----- */
       --start-button-color: #2ecc71; /* 시작 버튼 배경색(초록색) */
       --start-button-dark: #27ae60;  /* 시작 버튼 어두운 버전 */
-      
+
       /* ----- 다음 버튼 색상 ----- */
       --next-button-color: #322D55; /* 다음 버튼 배경색 */
       --next-button-dark: #262142;  /* 다음 버튼 어두운 버전 */
-      
+
       /* ----- 완료 버튼 색상 ----- */
       --complete-button-color: #8957a1; /* 완료 버튼 배경색 */
       --complete-button-dark: #7a4391;  /* 완료 버튼 어두운 색상 */
-      
+
       /* ----- 확인 버튼 색상 ----- */
       --check-button-color: #3498db; /* 확인 버튼 배경색 */
       --check-button-dark: #2980b9;  /* 확인 버튼 어두운 버전 */
-      
+
       /* ----- 제출 버튼 색상 ----- */
       --submit-button-color: #f39c12; /* 제출 버튼 배경색 */
       --submit-button-dark: #d35400;  /* 제출 버튼 어두운 버전 */
-      
+
       /* ----- 객관식 옵션 색상 ----- */
-      --option-color: #3498db;      /* 객관식 옵션 버튼 기본 색상 */
-      --option-dark: #2980b9;       /* 객관식 옵션 버튼 어두운 버전 */
+      --option-color: #3498db;           /* 객관식 옵션 버튼 기본 색상 */
+      --option-dark: #2980b9;           /* 객관식 옵션 버튼 어두운 버전 */
       --option-selected-color: #f39c12; /* 선택된 객관식 버튼 색상 */
       --option-selected-dark: #d35400; /* 선택된 객관식 버튼 어두운 버전 */
-      
+
       /* ----- 키보드 스타일 버튼 관련 색상 ----- */
-      --keyboard-top: #f5f5f5;      /* 키보드 스타일 버튼 상단 색상 */
-      --keyboard-side: #ddd;        /* 키보드 스타일 버튼 측면 색상 */
-      --keyboard-bottom: #bbb;      /* 키보드 스타일 버튼 하단 색상 */
-      
+      --keyboard-top: #f5f5f5;       /* 키보드 스타일 버튼 상단 색상 */
+      --keyboard-side: #ddd;         /* 키보드 스타일 버튼 측면 색상 */
+      --keyboard-bottom: #bbb;       /* 키보드 스타일 버튼 하단 색상 */
+
       /* ----- 객관식 옵션 설정 ----- */
-      --option-min-width: 100px;    /* 객관식 버튼 최소 너비 */
-      --option-padding-h: 15px;     /* 객관식 버튼 좌우 패딩 */
-      --option-padding-v: 10px;     /* 객관식 버튼 상하 패딩 */
-      --option-font-size: 16px;     /* 객관식 버튼 글자 크기 */
-      --option-3d-angle: 10deg;     /* 객관식 3D 효과 기울기 각도 */
-      --option-selected-scale: 1.1; /* 선택된 옵션 확대 비율 */
-      --option-hover-scale: 1.05;   /* 호버 시 옵션 확대 비율 */
-      
+      --option-min-width: 70px;   /* <<-- 객관식 버튼 최소 너비 조정 위치 */
+      --option-padding-h: 10px;      /* 버튼 좌우 여백 */
+      --option-padding-v: 15px;      /* 버튼 상하 여백 */
+      --option-font-size: 20px;      /* 버튼 글자 크기 */
+      --option-3d-angle: 10deg;
+      --option-selected-scale: 1.1;
+      --option-hover-scale: 1.05;
+
       /* ----- 주관식 피드백 효과 설정 ----- */
       --correct-bg-color: rgba(46,204,113,0.2);     /* 정답 배경색 (20% 투명도) */
       --correct-glow-color: rgba(46,204,113,0.5);   /* 정답 테두리 빛남 효과 (50% 투명도) */
-      --incorrect-bg-color: rgba(231,76,60,0.2);    /* 오답 배경색 (20% 투명도) */
+      --incorrect-bg-color: rgba(231,76,60,0.2);   /* 오답 배경색 (20% 투명도) */
       --incorrect-glow-color: rgba(231,76,60,0.5);  /* 오답 테두리 빛남 효과 (50% 투명도) */
-      --answer-glow-intensity: 15px;                /* 테두리 빛남 효과 강도 */
-      
+      --answer-glow-intensity: 15px;            /* 테두리 빛남 효과 강도 */
+
       /* ----- 게임 플레이 요소 ----- */
-      --remaining-chances: 3;       /* 초기 남은 기회 수 */
-      --chance-width: 40px;         /* 기회 표시기 너비 */
-      --chance-height: 16px;        /* 기회 표시기 높이 */
-      --chance-border-radius: 4px;  /* 기회 표시기 테두리 둥글기 */
+      --progress-height: 20px;                /* 진행률 게이지 높이 */
+      --progress-border-radius: 10px;         /* 진행률 게이지 테두리 둥글기 */
+      --progress-bg-color: #f0f0f0;          /* 진행률 게이지 배경색 */
+      --progress-gradient: linear-gradient(90deg, #3498db, #9b59b6); /* 진행률 게이지 그라데이션 */
+      --progress-shine: rgba(255,255,255,0.3);  /* 진행률 게이지 빛남 효과 색상 */
+      --progress-animation-duration: 0.8s;    /* 진행률 게이지 애니메이션 지속 시간 */
+      --progress-shine-duration: 2s;          /* 진행률 게이지 빛남 효과 지속 시간 */
+      --chance-width: 40px;               /* 기회 표시기 너비 */
+      --chance-height: 16px;              /* 기회 표시기 높이 */
+      --chance-border-radius: 4px;        /* 기회 표시기 테두리 둥글기 */
       --chance-animation-duration: 3s; /* 기회 표시기 애니메이션 지속 시간 */
-      --chance-wave-duration: 2s;   /* 기회 표시기 물결 애니메이션 지속 시간 */
-      --chance-color: #2ecc71;      /* 남은 기회 표시 색상 */
-      --chance-lost-color: #ecf0f1; /* 잃은 기회 표시 색상 */
-      
+      --chance-wave-duration: 2s;         /* 기회 표시기 물결 애니메이션 지속 시간 */
+      --chance-color: #2ecc71;            /* 남은 기회 표시 색상 */
+      --chance-lost-color: #ecf0f1;       /* 잃은 기회 표시 색상 */
+
       /* ----- 진행 게이지 설정 ----- */
-      --progress-height: 15px;      /* 진행 게이지 높이 */
-      --progress-border-radius: 8px; /* 진행 게이지 테두리 둥글기 */
-      --progress-left-color: #00D2F7;  /* 진행 게이지 왼쪽 색상 */
-      --progress-right-color: #7DF9AA; /* 진행 게이지 오른쪽 색상 */
+      --progress-height: 15px;            /* 진행 게이지 높이 */
+      --progress-border-radius: 8px;      /* 진행 게이지 테두리 둥글기 */
+      --progress-left-color: #00D2F7;      /* 진행 게이지 왼쪽 색상 */
+      --progress-right-color: #7DF9AA;     /* 진행 게이지 오른쪽 색상 */
       --progress-bg-color: rgba(236,240,241,0.8); /* 진행 게이지 배경색 */
       --progress-shine: rgba(255,255,255,0.35); /* 진행 게이지 반짝임 효과 색상 */
       --progress-animation-duration: 0.7s; /* 진행 게이지 애니메이션 지속 시간 */
       --progress-shine-duration: 2s; /* 진행 게이지 반짝임 애니메이션 지속 시간 */
       --progress-gradient: linear-gradient(90deg, var(--progress-left-color) 0%, var(--progress-right-color) 100%); /* 진행 게이지 그라데이션 */
-      
+
       /* ----- 완료 애니메이션 설정 ----- */
       --complete-animation-duration: 1.5s; /* 완료 애니메이션 지속 시간 */
-      --particle-count: 50;         /* 완료 애니메이션 파티클 개수 */
-      --particle-size-min: 5px;     /* 파티클 최소 크기 */
-      --particle-size-max: 15px;    /* 파티클 최대 크기 */
+      --particle-count: 50;               /* 완료 애니메이션 파티클 개수 */
+      --particle-size-min: 5px;           /* 파티클 최소 크기 */
+      --particle-size-max: 15px;          /* 파티클 최대 크기 */
       --particle-animation-duration: 1s; /* 파티클 애니메이션 지속 시간 */
       --particle-distance-min: 50px; /* 파티클 최소 이동 거리 */
       --particle-distance-max: 230px; /* 파티클 최대 이동 거리 */
-      
+
       /* ----- 결과 화면 색상 ----- */
       --result-info-bg: rgba(255,255,255,0.7);  /* 결과 정보 배경색 */
       --result-score-bg: linear-gradient(120deg, var(--next-button-color) 0%, #9b59b6 46%, #FFCC70 100%); /* 결과 점수 배경 */
       --score-highlight-color: #FFCC70; /* 최종 점수 하이라이트 색상 */
       --result-animation-duration: 0.5s; /* 결과 화면 애니메이션 지속 시간 */
       --score-pulsate-duration: 2s; /* 점수 표시 펄스 애니메이션 지속 시간 */
-      --score-shine-duration: 3s;   /* 점수 표시 반짝임 애니메이션 지속 시간 */
-      
+      --score-shine-duration: 3s;     /* 점수 표시 반짝임 애니메이션 지속 시간 */
+
       /* ----- 파티클 효과 색상 ----- */
       --particle-color-1: #00D2F7;  /* 파티클 효과 색상 1 */
       --particle-color-2: #322D55;  /* 파티클 효과 색상 2 */
       --particle-color-3: #FFCC70;  /* 파티클 효과 색상 3 */
       --particle-color-4: #4CAF50;  /* 파티클 효과 색상 4 */
       --particle-color-5: #9b59b6;  /* 파티클 효과 색상 5 */
-      
+
       /* ----- 폰트 설정 ----- */
       --main-font: 'Noto Sans KR', sans-serif; /* 기본 폰트 */
       --base-font-size: 16px;       /* 기본 폰트 크기 */
@@ -506,7 +512,7 @@
       --medium-font-size: 1.2rem;   /* 중간 글씨 크기(문제 번호용) */
       --large-font-size: 1.3rem;    /* 큰 글씨 크기(정보 패널 값) */
       --x-large-font-size: 2rem;    /* 매우 큰 글씨 크기(결과 점수용) */
-      
+
       /* ----- 크기 및 간격 설정 ----- */
       --container-max-width: 1100px; /* 컨테이너 최대 너비 */
       --container-width: 95%;       /* 컨테이너 기본 너비(비율) */
@@ -515,27 +521,27 @@
       --small-gap: 10px;            /* 작은 간격 */
       --large-gap: 25px;            /* 큰 간격 */
       --question-min-height: 500px; /* 문제 컨테이너 최소 높이 */
-      
+
       /* ----- 테두리 및 그림자 ----- */
-      --border-radius-small: 5px;   /* 작은 테두리 둥글기 */
-      --border-radius-medium: 8px;  /* 중간 테두리 둥글기(버튼용) */
-      --border-radius-large: 10px;  /* 큰 테두리 둥글기(컨테이너용) */
+      --border-radius-small: 5px;     /* 작은 테두리 둥글기 */
+      --border-radius-medium: 8px;    /* 중간 테두리 둥글기(버튼용) */
+      --border-radius-large: 10px;    /* 큰 테두리 둥글기(컨테이너용) */
       --border-radius-x-large: 12px; /* 매우 큰 테두리 둥글기 */
-      --border-radius-circle: 50%;  /* 원형 테두리(객관식 버튼용) */
+      --border-radius-circle: 50%;    /* 원형 테두리(객관식 버튼용) */
       --box-shadow-light: 0 2px 5px rgba(0,0,0,0.1); /* 가벼운 그림자 */
       --box-shadow-medium: 0 4px 10px rgba(0,0,0,0.1); /* 중간 그림자 */
       --box-shadow-heavy: 0 8px 20px rgba(0,0,0,0.15); /* 진한 그림자 */
-      
+
       /* ----- 입력 필드 설정 ----- */
-      --input-padding: 15px 20px;   /* 입력 필드 내부 여백 */
-      --input-font-size: 16px;      /* 입력 필드 글자 크기 */
+      --input-padding: 15px 20px;     /* 입력 필드 내부 여백 */
+      --input-font-size: 16px;        /* 입력 필드 글자 크기 */
       --input-focus-shadow: 0 5px 15px rgba(52,152,219,0.2); /* 입력 필드 포커스 그림자 */
       --input-focus-transform: translateY(-2px); /* 입력 필드 포커스 시 위치 이동 */
 
       /* ----- 반응형 디자인 설정 ----- */
-      --mobile-breakpoint: 480px;    /* 모바일 기기 분기점 */
+      --mobile-breakpoint: 480px;     /* 모바일 기기 분기점 */
     }
-    
+
     /* ======================= 공통 배경 및 레이아웃 ======================= */
     body {
       margin: 0;
@@ -550,7 +556,7 @@
       overflow-x: hidden;
       position: relative;
     }
-    
+
     /* 전체 배경에 반짝이는 효과 적용 */
     body::before {
       content: '';
@@ -563,7 +569,7 @@
       opacity: var(--body-pattern-opacity);
       z-index: -1;
     }
-    
+
     /* ======================= 배너 & 제목 ======================= */
     .banner {
       width: 100%;
@@ -609,7 +615,7 @@
       border-radius: var(--title-line-radius);
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    
+
     /* ======================= 컨테이너 & 정보 패널 ======================= */
     .container {
       max-width: var(--container-max-width);
@@ -625,8 +631,8 @@
       overflow: hidden;
       text-align: center;
     }
-    .container:hover { 
-      box-shadow: var(--box-shadow-heavy); 
+    .container:hover {
+      box-shadow: var(--box-shadow-heavy);
     }
     .container::before {
       content: '';
@@ -643,7 +649,7 @@
       0% { top: -100%; left: -100%; }
       100% { top: 100%; left: 100%; }
     }
-    
+
     /* 정보 패널 */
     .info-panel {
       display: flex;
@@ -671,7 +677,7 @@
       color: var(--secondary-color);
       font-weight: bold;
     }
-    
+
     /* 기회 표시 스타일 */
     .chances-container {
       display: flex;
@@ -679,7 +685,7 @@
       justify-content: center;
       margin-top: 5px;
     }
-    
+
     .chance-indicator {
       width: var(--chance-width);
       height: var(--chance-height);
@@ -689,7 +695,7 @@
       position: relative;
       overflow: hidden;
     }
-    
+
     .chance-indicator::before {
       content: '';
       position: absolute;
@@ -700,7 +706,7 @@
       background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
       animation: chance-shine var(--chance-animation-duration) infinite;
     }
-    
+
     .chance-indicator::after {
       content: '';
       position: absolute;
@@ -708,34 +714,34 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to bottom, 
-                rgba(255,255,255,0.2) 0%, 
-                rgba(255,255,255,0) 40%, 
-                rgba(255,255,255,0) 60%, 
-                rgba(255,255,255,0.2) 100%);
+      background: linear-gradient(to bottom,
+          rgba(255,255,255,0.2) 0%,
+          rgba(255,255,255,0) 40%,
+          rgba(255,255,255,0) 60%,
+          rgba(255,255,255,0.2) 100%);
       opacity: 0.5;
       animation: chance-wave var(--chance-wave-duration) infinite alternate;
     }
-    
+
     @keyframes chance-shine {
       0% { left: -100%; }
       20%, 100% { left: 100%; }
     }
-    
+
     @keyframes chance-wave {
       0% { opacity: 0.3; transform: translateY(-2px); }
       100% { opacity: 0.7; transform: translateY(2px); }
     }
-    
+
     .chance-indicator.lost {
       background-color: var(--chance-lost-color);
     }
-    
+
     .chance-indicator.lost::before,
     .chance-indicator.lost::after {
       display: none;
     }
-    
+
     /* ======================= 시작 화면 ======================= */
     #startSection {
       text-align: center;
@@ -790,13 +796,13 @@
       margin-right: 10px;
       outline: none;
       transition: all 0.3s;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1), 
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1),
                   inset 0 2px 5px rgba(0,0,0,0.05);
       background-color: white;
       color: var(--secondary-color);
     }
     .input-field:focus {
-      box-shadow: var(--input-focus-shadow), 
+      box-shadow: var(--input-focus-shadow),
                   inset 0 2px 5px rgba(0,0,0,0.05);
       transform: var(--input-focus-transform);
     }
@@ -808,7 +814,7 @@
       opacity: 0.7;
       transform: translateX(5px);
     }
-    
+
     /* ======================= 키보드 스타일 버튼 ======================= */
     .btn {
       padding: var(--button-padding);
@@ -823,7 +829,7 @@
       text-shadow: 0 1px 1px rgba(0,0,0,0.2);
       transition: all 0.15s ease;
       background-color: var(--keyboard-top);
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 2px 0 rgba(0,0,0,0.1),
         0 4px 0 var(--keyboard-bottom),
@@ -855,7 +861,7 @@
     }
     .btn:hover {
       transform: var(--button-hover-transform);
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 3px 0 rgba(0,0,0,0.1),
         0 5px 0 var(--keyboard-bottom),
@@ -865,7 +871,7 @@
     }
     .btn:active {
       transform: var(--button-active-transform);
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 1px 0 rgba(0,0,0,0.1),
         0 2px 0 var(--keyboard-bottom),
@@ -873,29 +879,28 @@
       transition: all 0.05s ease;
     }
     .btn:disabled {
-      background-color: var(--disabled-color);
       cursor: not-allowed;
-      transform: translateY(1px);    /* 음각 효과 */
-      box-shadow: 
+      transform: translateY(1px);      /* 음각 효과 */
+      filter: grayscale(40%) brightness(95%);  /* 모든 버튼에 동일한 회색조와 밝기 감소 적용 */
+      opacity: 0.7;                   /* 모든 버튼에 동일한 투명도 적용 */
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 1px 0 rgba(0,0,0,0.1),
-        0 2px 0 #aaa,                /* 줄어든 그림자 */
-        0 0 3px rgba(0,0,0,0.1);
-      opacity: 0.7;                  /* 투명도 추가 */
-      filter: grayscale(40%);        /* 그레이스케일 적용 */
+        0 2px 0 rgba(0,0,0,0.1);    /* 그림자 효과 감소 */
       text-shadow: none;             /* 텍스트 그림자 제거 */
+      transition: all 0.2s ease;     /* 부드러운 전환 효과 */
     }
     .btn:disabled:hover {
       transform: translateY(1px);    /* hover 효과 제거 */
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 1px 0 rgba(0,0,0,0.1),
-        0 2px 0 #aaa,
-        0 0 3px rgba(0,0,0,0.1);
+        0 2px 0 rgba(0,0,0,0.1);    /* hover 시에도 동일한 그림자 유지 */
+      filter: grayscale(40%) brightness(95%);  /* hover 시에도 동일한 효과 유지 */
     }
-    #startButton { 
+    #startButton {
       background-color: var(--start-button-color);
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 2px 0 rgba(0,0,0,0.1),
         0 4px 0 var(--start-button-dark),
@@ -904,7 +909,7 @@
         0 0 10px rgba(0,0,0,0.2);
     }
     #startButton:hover {
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 3px 0 rgba(0,0,0,0.1),
         0 5px 0 var(--start-button-dark),
@@ -912,9 +917,9 @@
         0 9px 0 rgba(0,0,0,0.1),
         0 0 12px rgba(0,0,0,0.2);
     }
-    #nextButton { 
+    #nextButton {
       background-color: var(--next-button-color);
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 2px 0 rgba(0,0,0,0.1),
         0 4px 0 var(--next-button-dark),
@@ -923,7 +928,7 @@
         0 0 10px rgba(0,0,0,0.2);
     }
     #nextButton:hover {
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 3px 0 rgba(0,0,0,0.1),
         0 5px 0 var(--next-button-dark),
@@ -931,9 +936,9 @@
         0 9px 0 rgba(0,0,0,0.1),
         0 0 12px rgba(0,0,0,0.2);
     }
-    #nextButton.complete-button { 
-      background-color: var(--complete-button-color); 
-      box-shadow: 
+    #nextButton.complete-button {
+      background-color: var(--complete-button-color);
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 2px 0 rgba(0,0,0,0.1),
         0 4px 0 var(--complete-button-dark),
@@ -943,7 +948,7 @@
     }
     #nextButton.complete-button:hover {
       transform: var(--button-hover-transform);
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 3px 0 rgba(0,0,0,0.1),
         0 5px 0 var(--complete-button-dark),
@@ -951,9 +956,9 @@
         0 9px 0 rgba(0,0,0,0.1),
         0 0 12px rgba(137, 87, 161, 0.4);
     }
-    #submitButton { 
+    #submitButton {
       background-color: var(--submit-button-color);
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 2px 0 rgba(0,0,0,0.1),
         0 4px 0 var(--submit-button-dark),
@@ -962,7 +967,7 @@
         0 0 10px rgba(0,0,0,0.2);
     }
     #submitButton:hover {
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 3px 0 rgba(0,0,0,0.1),
         0 5px 0 var(--submit-button-dark),
@@ -970,9 +975,9 @@
         0 9px 0 rgba(0,0,0,0.1),
         0 0 12px rgba(0,0,0,0.2);
     }
-    #checkButton { 
+    #checkButton {
       background-color: var(--check-button-color);
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 2px 0 rgba(0,0,0,0.1),
         0 4px 0 var(--check-button-dark),
@@ -981,7 +986,7 @@
         0 0 10px rgba(0,0,0,0.2);
     }
     #checkButton:hover {
-      box-shadow: 
+      box-shadow:
         0 0 0 1px rgba(0,0,0,0.1),
         0 3px 0 rgba(0,0,0,0.1),
         0 5px 0 var(--check-button-dark),
@@ -989,7 +994,7 @@
         0 9px 0 rgba(0,0,0,0.1),
         0 0 12px rgba(0,0,0,0.2);
     }
-    
+
     /* ======================= 객관식 옵션 스타일 ======================= */
     .option {
       border: none;
@@ -1007,13 +1012,24 @@
       color: white;
       text-align: center;
       transform: perspective(500px) rotateX(var(--option-3d-angle));
-      box-shadow: 
-        0 6px 12px rgba(0,0,0,0.15), 
-        0 3px 5px rgba(0,0,0,0.12), 
+      box-shadow:
+        0 6px 12px rgba(0,0,0,0.15),
+        0 3px 5px rgba(0,0,0,0.12),
         inset 0 -4px 5px rgba(0,0,0,0.2),
         inset 0 2px 4px rgba(255,255,255,0.5);
+
+      /* --- 일관된 최소 너비 적용 --- */
+      min-width: var(--option-min-width);
+      /* --- 수정 완료 --- */
     }
-    
+
+    /* KaTeX 렌더링 요소에 대한 스타일 (필요시 추가) */
+    .option .katex {
+        font-size: var(--option-font-size); /* 버튼 폰트 크기와 맞춤 */
+        /* line-height: normal; */ /* 필요시 line-height 조정 */
+    }
+
+
     .option::before {
       content: '';
       position: absolute;
@@ -1024,7 +1040,7 @@
       left: 0;
       z-index: 2;
     }
-    
+
     .option::after {
       content: '';
       position: absolute;
@@ -1035,51 +1051,51 @@
       background: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,0));
       transform: translateZ(1px);
     }
-    
+
     .option:hover {
       background: radial-gradient(ellipse at 30% 30%, var(--option-color) 30%, var(--option-dark) 100%);
       transform: perspective(500px) rotateX(calc(var(--option-3d-angle) + 5deg)) translateY(-3px) scale(var(--option-hover-scale));
-      box-shadow: 
-        0 10px 20px rgba(0,0,0,0.2), 
-        0 5px 8px rgba(0,0,0,0.15), 
+      box-shadow:
+        0 10px 20px rgba(0,0,0,0.2),
+        0 5px 8px rgba(0,0,0,0.15),
         inset 0 -4px 5px rgba(0,0,0,0.2),
         inset 0 2px 4px rgba(255,255,255,0.5);
     }
-    
+
     .option.selected {
       background: radial-gradient(ellipse at 30% 30%, var(--option-selected-color) 0%, var(--option-selected-dark) 100%);
       transform: perspective(500px) rotateX(calc(var(--option-3d-angle) + 5deg)) scale(var(--option-selected-scale));
-      box-shadow: 
-        0 8px 25px rgba(0,0,0,0.15), 
-        0 5px 10px rgba(0,0,0,0.1), 
-        0 0 15px rgba(255, 165, 0, 0.5), 
+      box-shadow:
+        0 8px 25px rgba(0,0,0,0.15),
+        0 5px 10px rgba(0,0,0,0.1),
+        0 0 15px rgba(255, 165, 0, 0.5),
         inset 0 -4px 5px rgba(0,0,0,0.2),
         inset 0 2px 4px rgba(255,255,255,0.5);
     }
-    
+
     /* 정답/오답 피드백 스타일 */
     .option.correct {
       background: radial-gradient(ellipse at 30% 30%, var(--correct-color) 0%, var(--correct-dark) 100%);
       transform: perspective(500px) rotateX(calc(var(--option-3d-angle) + 5deg)) scale(var(--option-selected-scale));
-      box-shadow: 
-        0 8px 25px rgba(0,0,0,0.15), 
-        0 5px 10px rgba(0,0,0,0.1), 
-        0 0 15px rgba(46, 204, 113, 0.5), 
+      box-shadow:
+        0 8px 25px rgba(0,0,0,0.15),
+        0 5px 10px rgba(0,0,0,0.1),
+        0 0 15px rgba(46, 204, 113, 0.5),
         inset 0 -4px 5px rgba(0,0,0,0.2),
         inset 0 2px 4px rgba(255,255,255,0.5);
     }
-    
+
     .option.incorrect {
       background: radial-gradient(ellipse at 30% 30%, var(--incorrect-color) 0%, var(--incorrect-dark) 100%);
       transform: perspective(500px) rotateX(calc(var(--option-3d-angle) + 5deg)) scale(var(--option-selected-scale));
-      box-shadow: 
-        0 8px 25px rgba(0,0,0,0.15), 
-        0 5px 10px rgba(0,0,0,0.1), 
-        0 0 15px rgba(231, 76, 60, 0.5), 
+      box-shadow:
+        0 8px 25px rgba(0,0,0,0.15),
+        0 5px 10px rgba(0,0,0,0.1),
+        0 0 15px rgba(231, 76, 60, 0.5),
         inset 0 -4px 5px rgba(0,0,0,0.2),
         inset 0 2px 4px rgba(255,255,255,0.5);
     }
-    
+
     /* ======================= 문제 영역 ======================= */
     #gameSection {
       display: none;
@@ -1115,12 +1131,12 @@
       border-right: 1px solid #eee;
       display: none;
     }
-    .passage img { 
-      width: 100%; 
-      height: auto; 
-      display: block; 
+    .passage img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
-    
+
     .question {
       flex: 1;
       text-align: center;
@@ -1130,8 +1146,8 @@
       flex-direction: column;
       align-items: center;
     }
-    .question.with-passage { 
-      margin-left: 10px; 
+    .question.with-passage {
+      margin-left: 10px;
     }
     .question-number {
       font-size: var(--medium-font-size);
@@ -1179,7 +1195,7 @@
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
     }
-    
+
     /* 옵션 영역 (객관식) */
     .options {
       display: flex;
@@ -1193,10 +1209,10 @@
       flex-direction: column;
       align-items: center;
     }
-    
+
     /* 주관식 입력 영역 */
     .input-answer {
-      display: none;
+      display: none; /* Initially hidden */
       flex-direction: column;
       align-items: center;
       margin: 30px 0;
@@ -1207,50 +1223,50 @@
       flex-direction: column;
       gap: 10px;
       width: 100%;
-      max-width: 400px;
+      /* max-width: 400px; /* This might be overridden by inline styles for width */
       margin-bottom: 15px;
-      align-items: center;
+      align-items: center; /* 입력 필드들을 중앙 정렬 */
     }
     .answer-input {
       padding: var(--input-padding);
       font-size: var(--input-font-size);
       border: none;
       border-radius: 10px;
-      width: 100%;
+      width: 100%; /* Ensure full width within its 350px parent container */
       outline: none;
       transition: all 0.3s;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1), 
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1),
                   inset 0 2px 5px rgba(0,0,0,0.05);
       background-color: white;
       color: var(--secondary-color);
-      box-sizing: border-box;
+      box-sizing: border-box; /* Include padding in width calculation */
     }
     .answer-input:focus {
-      box-shadow: var(--input-focus-shadow), 
+      box-shadow: var(--input-focus-shadow),
                   inset 0 2px 5px rgba(0,0,0,0.05);
       transform: var(--input-focus-transform);
     }
-    
+
     /* 주관식 정답/오답 피드백 스타일 - 통일된 방식 */
     .answer-input.correct {
       background-color: var(--correct-bg-color);
-      border-color: var(--correct-color);
+      border-color: var(--correct-color); /* Optional: add border feedback */
       box-shadow: 0 0 var(--answer-glow-intensity) var(--correct-glow-color);
     }
-    
+
     .answer-input.incorrect {
       background-color: var(--incorrect-bg-color);
-      border-color: var(--incorrect-color);
+      border-color: var(--incorrect-color); /* Optional: add border feedback */
       box-shadow: 0 0 var(--answer-glow-intensity) var(--incorrect-glow-color);
     }
-    
+
     /* 진행률 게이지 */
     .progress-container {
       width: 100%;
       height: var(--progress-height);
       background-color: var(--progress-bg-color);
       border-radius: var(--progress-border-radius);
-      margin: 30px 0 15px;
+      margin: 30px 0 15px; /* 확인 버튼과의 간격 등 고려 */
       position: relative;
       overflow: hidden;
       box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
@@ -1283,13 +1299,13 @@
       left: -100%;
       width: 200%;
       height: 200%;
-      background-image: 
+      background-image:
         repeating-linear-gradient(
-          45deg, 
-          rgba(255,255,255,0.1) 0%, 
-          rgba(255,255,255,0.1) 5%, 
-          rgba(255,255,255,0.3) 10%, 
-          rgba(255,255,255,0.1) 15%, 
+          45deg,
+          rgba(255,255,255,0.1) 0%,
+          rgba(255,255,255,0.1) 5%,
+          rgba(255,255,255,0.3) 10%,
+          rgba(255,255,255,0.1) 15%,
           rgba(255,255,255,0.1) 20%
         );
       animation: wave 8s infinite linear;
@@ -1302,13 +1318,13 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: 
+      background-image:
         repeating-linear-gradient(
-          -45deg, 
-          rgba(255,255,255,0.05) 0%, 
-          rgba(255,255,255,0.05) 7%, 
-          rgba(255,255,255,0.2) 14%, 
-          rgba(255,255,255,0.05) 21%, 
+          -45deg,
+          rgba(255,255,255,0.05) 0%,
+          rgba(255,255,255,0.05) 7%,
+          rgba(255,255,255,0.2) 14%,
+          rgba(255,255,255,0.05) 21%,
           rgba(255,255,255,0.05) 28%
         );
       animation: wave-reverse 10s infinite linear;
@@ -1344,7 +1360,7 @@
       transform: translateY(0);
       transition: transform 0.3s ease;
     }
-    
+
     /* 완료 애니메이션 */
     @keyframes explode {
       0% { transform: scale(1); filter: brightness(1); }
@@ -1354,11 +1370,11 @@
       80% { transform: scale(1); filter: brightness(1.2); }
       100% { transform: scale(1.03); filter: brightness(1.5); }
     }
-    
+
     .completed-animation {
       animation: explode var(--complete-animation-duration) ease-out forwards;
     }
-    
+
     .particle {
       position: absolute;
       width: 8px;
@@ -1368,16 +1384,16 @@
       animation: particle-animation var(--particle-animation-duration) cubic-bezier(0,0.5,0.5,1) forwards;
     }
     @keyframes particle-animation {
-      0% { 
-        opacity: 1; 
-        transform: translate(0, 0); 
+      0% {
+        opacity: 1;
+        transform: translate(0, 0);
       }
-      100% { 
-        opacity: 0; 
-        transform: translate(var(--translateX), var(--translateY)); 
+      100% {
+        opacity: 0;
+        transform: translate(var(--translateX), var(--translateY));
       }
     }
-    
+
     /* ======================= 결과 화면 ======================= */
     #resultSection {
       display: none;
@@ -1479,7 +1495,7 @@
       100% { transform: scale(1.05); box-shadow: 0 12px 25px rgba(76,175,80,0.3); }
     }
     #finalScore:hover { transform: translateY(-5px); }
-    
+
     /* 서버 응답 메시지 스타일 */
     .server-message {
       margin-top: 15px;
@@ -1494,10 +1510,10 @@
     .server-message.error {
       color: var(--incorrect-color);
     }
-    
+
     /* ======================= 로딩 스피너 ======================= */
     .loading-spinner {
-      display: none;
+      display: none; /* Initially hidden */
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
@@ -1518,7 +1534,7 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
-    
+
     /* ======================= 반응형 디자인 ======================= */
     @media (max-width: var(--mobile-breakpoint)) {
       .container { padding: 10px; width: 100%; border-radius: 8px; }
@@ -1527,21 +1543,28 @@
       .info-label { font-size: 0.7rem; margin-bottom: 3px; }
       .info-value { font-size: 1rem; }
       .btn, .option { padding: 10px 15px; font-size: 0.9rem; margin: 8px 3px; }
-      .input-field, .answer-input { width: 100%; }
+      .input-field { width: calc(100% - 30px); margin-right: 0; margin-bottom: 10px; } /* Adjusted for mobile */
+      .answer-input { width: 100%; } /* Ensure full width on mobile */
       #startSection { padding: 20px 10px; }
+      #startSection > div { display: flex; flex-direction: column; align-items: center; } /* Stack input and button */
+      .question-container { flex-direction: column; } /* Stack passage and question on mobile */
+      .passage { border-right: none; border-bottom: 1px solid #eee; padding-right: 0; margin-bottom: 10px; max-height: 300px; }
+      .question.with-passage { margin-left: 0; }
+      /* 주관식 입력 필드를 감싸는 div의 너비를 모바일에서 조정합니다. */
+      .input-answer-fields > div[style*="width: 350px"] { /* 350px 너비가 적용된 div 선택 */
+          width: 90% !important; /* 모바일에서는 90% 너비로 강제 적용 */
+          max-width: 350px; /* 최대 너비는 유지 */
+      }
     }
   </style>
 </head>
 <body>
-  <!-- 배너 영역 -->
   <div class="banner" id="banner"></div>
-  <!-- 게임 제목 -->
   <h1 id="gameTitle"></h1>
   <div class="loading-spinner" id="loadingSpinner">
     <div class="spinner"></div>
   </div>
   <div class="container">
-    <!-- 시작 화면 -->
     <div id="startSection">
       <h2 class="start-title">이름을 입력하고 게임을 시작하세요</h2>
       <div>
@@ -1549,7 +1572,6 @@
         <button class="btn" id="startButton">게임시작</button>
       </div>
     </div>
-    <!-- 게임 진행 화면 -->
     <div id="gameSection">
       <div class="info-panel">
         <div class="info-item">
@@ -1559,14 +1581,6 @@
         <div class="info-item">
           <div class="info-label">현재 점수</div>
           <div class="info-value" id="currentScore">0</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">남은 기회</div>
-          <div class="chances-container">
-            <div class="chance-indicator" id="chance1"></div>
-            <div class="chance-indicator" id="chance2"></div>
-            <div class="chance-indicator" id="chance3"></div>
-          </div>
         </div>
       </div>
       <div class="question-container" id="questionContainer">
@@ -1584,7 +1598,6 @@
         </div>
       </div>
     </div>
-    <!-- 결과 화면 -->
     <div id="resultSection">
       <div class="result-title">게임 종료</div>
       <div class="result-info" id="finalScore"></div>
@@ -1593,679 +1606,751 @@
       <div id="serverMessage" class="server-message"></div>
     </div>
   </div>
-  
+  <!-- MathJax 추가 -->
   <script>
-    /* 텍스트 설정 */
-    const START_SCREEN_TITLE = "이름을 입력하고 게임을 시작하세요";  /* 시작 화면 제목 */
-    const PLAYER_NAME_PLACEHOLDER = "이름을 입력하세요";            /* 이름 입력 필드 플레이스홀더 */
-    const START_BUTTON_TEXT = "게임시작";                         /* 시작 버튼 텍스트 */
-    const NEXT_BUTTON_TEXT = "다음문제";                         /* 다음 버튼 텍스트 */
-    const COMPLETE_BUTTON_TEXT = "완료";                         /* 완료 버튼 텍스트 */
-    const CHECK_BUTTON_TEXT = "확인";                           /* 확인 버튼 텍스트 */
-    const SUBMIT_BUTTON_TEXT = "전송하기";                       /* 전송 버튼 텍스트 */
-    const RESULT_TITLE_TEXT = "게임 종료";                       /* 결과 화면 제목 */
-    
-    const SUCCESS_MESSAGE = "성공: 데이터가 성공적으로 전송되었습니다.";  /* 성공 메시지 */
-    const ERROR_MESSAGE = "오류: 데이터 전송에 실패했습니다.";           /* 오류 메시지 */
-    const NETWORK_ERROR = "네트워크 오류: 서버와 통신할 수 없습니다.";    /* 네트워크 오류 메시지 */
-    
-    /* 게임 설정 */
-    const gameTitle = gameConfig.gameTitle;            /* 게임 제목 */
-    const questions = gameConfig.questions;            /* 모든 문제 배열 */
-    const defaultScore = gameConfig.defaultScore || 10; /* 기본 점수 */
-    const bannerURL = gameConfig.bannerURL || "";      /* 배너 이미지 URL */
-    const randomizeQuestions = gameConfig.randomizeQuestions || false; /* 문제 순서 랜덤화 여부 */
-    
-    /* 전역 변수 선언 */
-    let currentQuestion = 0;         /* 현재 문제 인덱스 */
-    let score = 0;                  /* 현재 점수 */
-    let elapsedTime = 0;            /* 경과 시간(초) */
-    let timerInterval = null;       /* 타이머 인터벌 ID */
-    let startTime = 0;              /* 시작 시간 타임스탬프 */
-    let gameOver = false;           /* 게임 종료 여부 */
-    let userAnswers = [];           /* 사용자 답변 기록 */
-    let answerSubmitted = false;    /* 현재 문제 답변 제출 여부 */
-    let completedQuestions = 0;     /* 완료된 문제 수 */
-    let remainingChances = 3;       /* 남은 기회 수 */
-    let selectedOptions = [];       /* 선택된 객관식 옵션들(복수선택) */
-    let player = "";                /* 플레이어 이름 */
-   
-   /* DOM 요소 참조 (최상단에 선언하여 이후 코드에서 안전하게 사용) */
-   const elements = {
-     banner: document.getElementById("banner"),
-     gameTitle: document.getElementById("gameTitle"),
-     startSection: document.getElementById('startSection'),
-     gameSection: document.getElementById('gameSection'),
-     resultSection: document.getElementById('resultSection'),
-     playerName: document.getElementById('playerName'),
-     startButton: document.getElementById('startButton'),
-     timer: document.getElementById('timer'),
-     currentScore: document.getElementById('currentScore'),
-     questionContainer: document.getElementById('questionContainer'),
-     passage: document.getElementById('passage'),
-     question: document.getElementById('question'),
-     questionNumber: document.getElementById('questionNumber'),
-     questionImages: document.getElementById('questionImages'),
-     multipleChoice: document.getElementById('multipleChoice'),
-     shortAnswer: document.getElementById('shortAnswer'),
-     nextButton: document.getElementById('nextButton'),
-     submitButton: document.getElementById('submitButton'),
-     finalScore: document.getElementById('finalScore'),
-     finalTime: document.getElementById('finalTime'),
-     serverMessage: document.getElementById('serverMessage'),
-     progressBar: document.getElementById('progressBar'),
-     progressIndicator: document.getElementById('progressIndicator'),
-     loadingSpinner: document.getElementById('loadingSpinner'),
-     chance1: document.getElementById('chance1'),
-     chance2: document.getElementById('chance2'),
-     chance3: document.getElementById('chance3')
-   };
-   
-   /* 타이머 함수 */
-   const timerFunctions = {
-     start() {
-       startTime = Date.now();           /* 현재 시간을 시작 시간으로 설정 */
-       timerInterval = setInterval(this.update, 1000); /* 1초마다 update 함수 실행 */
-     },
-     update() {
-       elapsedTime = Math.floor((Date.now() - startTime) / 1000); /* 경과 시간 계산 */
-       const m = Math.floor(elapsedTime / 60).toString().padStart(2, '0'); /* 분 */
-       const s = (elapsedTime % 60).toString().padStart(2, '0');           /* 초 */
-       elements.timer.textContent = `${m}:${s}`;                           /* 타이머 표시 */
-     },
-     stop() { clearInterval(timerInterval); },                             /* 타이머 정지 */
-     formatTime(sec) {
-       const m = Math.floor(sec / 60);                                     /* 분 */
-       const s = sec % 60;                                                 /* 초 */
-       return `${m}분 ${s}초`;                                             /* 포맷 변환 */
-     }
-   };
-   
-   /* 게임 초기화 함수 */
-   function resetGame() {
-     if(randomizeQuestions) { questions.sort(() => Math.random() - 0.5); } /* 문제 랜덤 섞기 */
-     
-     /* 변수 초기화 */
-     currentQuestion = 0; 
-     score = 0; 
-     elapsedTime = 0; 
-     gameOver = false;
-     userAnswers = []; 
-     answerSubmitted = false; 
-     completedQuestions = 0;
-     remainingChances = 3; 
-     selectedOptions = [];
-     
-     /* UI 초기화 */
-     elements.timer.textContent = "00:00";
-     elements.currentScore.textContent = "0";
-     updateChancesDisplay();
-     updateProgressBar();
-   }
-   
-   // 진행률 게이지 업데이트 함수
-   function updateProgressBar() {
-     const progress = (completedQuestions / questions.length) * 100;       /* 진행률 계산 */
-     elements.progressBar.style.width = `${progress}%`;                    /* 진행 바 너비 설정 */
-     elements.progressIndicator.textContent = `${completedQuestions}/${questions.length}`; /* 진행 상태 표시 */
-   }
-   
-   // 파티클 효과 생성
-   function createCompletionParticles() {
-     const container = document.querySelector('.progress-container');
-     const rect = container.getBoundingClientRect();
-     const centerX = rect.left + rect.width / 2;                           /* 중앙 X 좌표 */
-     const centerY = rect.top + rect.height / 2;                           /* 중앙 Y 좌표 */
-     
-     /* 파티클 생성 */
-     for (let i = 0; i < parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-count')); i++) {
-       const particle = document.createElement('div');
-       particle.className = 'particle';
-       
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        // 초기 렌더링 제한 설정 추가
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'has-latex'
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+ <script>
+  /* 텍스트 설정 */
+  const START_SCREEN_TITLE = "이름을 입력하고 게임을 시작하세요";  /* 시작 화면 제목 */
+  const PLAYER_NAME_PLACEHOLDER = "이름을 입력하세요";           /* 이름 입력 필드 플레이스홀더 */
+  const START_BUTTON_TEXT = "게임시작";                  /* 시작 버튼 텍스트 */
+  const NEXT_BUTTON_TEXT = "다음문제";                   /* 다음 버튼 텍스트 */
+  const COMPLETE_BUTTON_TEXT = "완료";                   /* 완료 버튼 텍스트 */
+  const CHECK_BUTTON_TEXT = "확인";                    /* 확인 버튼 텍스트 */
+  const SUBMIT_BUTTON_TEXT = "전송하기";                 /* 전송 버튼 텍스트 */
+  const RESULT_TITLE_TEXT = "게임 종료";                   /* 결과 화면 제목 */
+
+  const SUCCESS_MESSAGE = "성공: 데이터가 성공적으로 전송되었습니다.";  /* 성공 메시지 */
+  const ERROR_MESSAGE = "오류: 데이터 전송에 실패했습니다.";      /* 오류 메시지 */
+  const NETWORK_ERROR = "네트워크 오류: 서버와 통신할 수 없습니다.";   /* 네트워크 오류 메시지 */
+
+  /* 게임 설정 */
+  const gameTitle = gameConfig.gameTitle;      /* 게임 제목 */
+  const questions = gameConfig.questions;      /* 모든 문제 배열 */
+  const defaultScore = gameConfig.defaultScore || 10; /* 기본 점수 */
+  const bannerURL = gameConfig.bannerURL || "";      /* 배너 이미지 URL */
+  const randomizeQuestions = gameConfig.randomizeQuestions || false; /* 문제 순서 랜덤화 여부 */
+
+  /* 전역 변수 선언 */
+  let currentQuestion = 0;      /* 현재 문제 인덱스 */
+  let score = 0;                /* 현재 점수 */
+  let elapsedTime = 0;          /* 경과 시간(초) */
+  let timerInterval = null;     /* 타이머 인터벌 ID */
+  let startTime = 0;            /* 시작 시간 타임스탬프 */
+  let gameOver = false;         /* 게임 종료 여부 */
+  let userAnswers = [];         /* 사용자 답변 기록 */
+  let answerSubmitted = false;  /* 현재 문제 답변 제출 여부 */
+  let completedQuestions = 0;   /* 완료된 문제 수 */
+  let selectedOptions = [];     /* 선택된 객관식 옵션들(복수선택) */
+  let player = "";              /* 플레이어 이름 */
+
+  /* DOM 요소 참조 (최상단에 선언하여 이후 코드에서 안전하게 사용) */
+  const elements = {
+    banner: document.getElementById("banner"),
+    gameTitle: document.getElementById("gameTitle"),
+    startSection: document.getElementById('startSection'),
+    gameSection: document.getElementById('gameSection'),
+    resultSection: document.getElementById('resultSection'),
+    playerName: document.getElementById('playerName'),
+    startButton: document.getElementById('startButton'),
+    timer: document.getElementById('timer'),
+    currentScore: document.getElementById('currentScore'),
+    questionContainer: document.getElementById('questionContainer'),
+    passage: document.getElementById('passage'),
+    question: document.getElementById('question'),
+    questionNumber: document.getElementById('questionNumber'),
+    questionImages: document.getElementById('questionImages'),
+    multipleChoice: document.getElementById('multipleChoice'),
+    shortAnswer: document.getElementById('shortAnswer'),
+    nextButton: document.getElementById('nextButton'),
+    submitButton: document.getElementById('submitButton'),
+    finalScore: document.getElementById('finalScore'),
+    finalTime: document.getElementById('finalTime'),
+    serverMessage: document.getElementById('serverMessage'),
+    progressBar: document.getElementById('progressBar'),
+    progressIndicator: document.getElementById('progressIndicator'),
+    loadingSpinner: document.getElementById('loadingSpinner'),
+    // --- 수정 3: 진행률 컨테이너 요소 추가 ---
+    progressContainer: document.querySelector('.progress-container') // progressBar의 부모 요소를 선택
+    // --- 수정 끝 ---
+  };
+
+  /* 타이머 함수 */
+  const timerFunctions = {
+    start() {
+      startTime = Date.now();              /* 현재 시간을 시작 시간으로 설정 */
+      timerInterval = setInterval(this.update, 1000); /* 1초마다 update 함수 실행 */
+    },
+    update() {
+      elapsedTime = Math.floor((Date.now() - startTime) / 1000); /* 경과 시간 계산 */
+      const m = Math.floor(elapsedTime / 60).toString().padStart(2, '0'); /* 분 */
+      const s = (elapsedTime % 60).toString().padStart(2, '0');      /* 초 */
+      elements.timer.textContent = `${m}:${s}`;                       /* 타이머 표시 */
+    },
+    stop() { clearInterval(timerInterval); },                       /* 타이머 정지 */
+    formatTime(sec) {
+      const m = Math.floor(sec / 60);                          /* 분 */
+      const s = sec % 60;                                      /* 초 */
+      return `${m}분 ${s}초`;                                  /* 포맷 변환 */
+    }
+  };
+
+  /* 게임 초기화 함수 */
+  function resetGame() {
+    if(randomizeQuestions) { questions.sort(() => Math.random() - 0.5); } /* 문제 랜덤 섞기 */
+
+    /* 변수 초기화 */
+    currentQuestion = 0;
+    score = 0;
+    elapsedTime = 0;
+    gameOver = false;
+    userAnswers = [];
+    answerSubmitted = false;
+    completedQuestions = 0;
+    selectedOptions = [];
+
+    /* UI 초기화 */
+    elements.timer.textContent = "00:00";
+    elements.currentScore.textContent = "0";
+    updateProgressBar();
+  }
+
+  // 진행률 게이지 업데이트 함수
+  function updateProgressBar() {
+    const progress = (completedQuestions / questions.length) * 100;      /* 진행률 계산 */
+    elements.progressBar.style.width = `${progress}%`;                   /* 진행 바 너비 설정 */
+    elements.progressIndicator.textContent = `${completedQuestions}/${questions.length}`; /* 진행 상태 표시 */
+  }
+
+  // 파티클 효과 생성
+  function createCompletionParticles() {
+    const container = document.querySelector('.progress-container');
+    const rect = container.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;          /* 중앙 X 좌표 */
+    const centerY = rect.top + rect.height / 2;         /* 중앙 Y 좌표 */
+
+    /* 파티클 생성 */
+    for (let i = 0; i < parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-count')); i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+
       /* 랜덤 색상 설정 */
-       const colors = [
-         getComputedStyle(document.documentElement).getPropertyValue('--particle-color-1').trim(),
-         getComputedStyle(document.documentElement).getPropertyValue('--particle-color-2').trim(),
-         getComputedStyle(document.documentElement).getPropertyValue('--particle-color-3').trim(),
-         getComputedStyle(document.documentElement).getPropertyValue('--particle-color-4').trim(),
-         getComputedStyle(document.documentElement).getPropertyValue('--particle-color-5').trim()
-       ];
-       particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-       
-       /* 랜덤 크기 설정 */
-       const minSize = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-size-min'));
-       const maxSize = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-size-max'));
-       const size = Math.random() * (maxSize - minSize) + minSize;
-       particle.style.width = `${size}px`;
-       particle.style.height = `${size}px`;
-       
-       /* 랜덤 방향 및 거리 설정 */
-       const angle = Math.random() * Math.PI * 2;
-       const minDistance = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-distance-min'));
-       const maxDistance = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-distance-max'));
-       const distance = Math.random() * (maxDistance - minDistance) + minDistance;
-       const translateX = Math.cos(angle) * distance;
-       const translateY = Math.sin(angle) * distance;
-       
-       particle.style.setProperty('--translateX', `${translateX}px`);
-       particle.style.setProperty('--translateY', `${translateY}px`);
-       particle.style.left = `${centerX - rect.left}px`;
-       particle.style.top = `${centerY - rect.top}px`;
-       particle.style.animationDelay = `${Math.random() * 0.3}s`;
-       
-       container.appendChild(particle);
-       
-       /* 애니메이션 후 파티클 제거 */
-       const animationDuration = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--particle-animation-duration')) * 1000 + 500;
-       setTimeout(() => { particle.remove(); }, animationDuration);
-     }
-   }
-   
-   // 완료 애니메이션 실행
-   function triggerCompletionAnimation() {
-     return new Promise(resolve => {
-       elements.progressBar.style.width = "100%";                         /* 진행 바 100%로 설정 */
-       setTimeout(() => {
-         elements.progressBar.classList.add('completed-animation');        /* 애니메이션 클래스 추가 */
-         createCompletionParticles();                                      /* 파티클 효과 생성 */
-         const animationDuration = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--complete-animation-duration')) * 1000 + 300;
-         setTimeout(() => { resolve(); }, animationDuration);              /* 애니메이션 완료 후 Promise 해결 */
-       }, 300);
-     });
-   }
-   
-   // 남은 기회 업데이트
-   function updateChancesDisplay() {
-     elements.chance1.className = remainingChances >= 1 ? 'chance-indicator' : 'chance-indicator lost';
-     elements.chance2.className = remainingChances >= 2 ? 'chance-indicator' : 'chance-indicator lost';
-     elements.chance3.className = remainingChances >= 3 ? 'chance-indicator' : 'chance-indicator lost';
-   }
-   
-   // 문제 로드 함수
-   function loadQuestion(qIndex) {
-     answerSubmitted = false;                                              /* 답변 제출 상태 초기화 */
-     selectedOptions = [];                                                 /* 선택된 옵션 초기화 */
-     elements.nextButton.disabled = true;                                  /* 다음문제 버튼 비활성화 */
-     
-     /* 기존 확인 버튼 제거 */
-     const existingConfirm = document.getElementById('checkButton');
-     if(existingConfirm && existingConfirm.parentNode) { existingConfirm.parentNode.removeChild(existingConfirm); }
-     
-     /* 객관식/주관식 영역 초기화 */
-     elements.multipleChoice.innerHTML = "";
-     elements.shortAnswer.innerHTML = "";
-     
-     const q = questions[qIndex];                                          /* 현재 문제 가져오기 */
-     if(!q) { endGame(true); return; }                                     /* 문제가 없으면 게임 종료 */
-     
-     elements.questionNumber.textContent = `문제 ${qIndex + 1}`;           /* 문제 번호 표시 */
-     
-     /* 보기(passage) 설정 */
-     if(q.passage) {
-       elements.passage.style.display = 'block';
-       elements.passage.innerHTML = `<img src="${q.passage}" alt="보기" style="width:100%;">`;
-       elements.question.classList.add('with-passage');
-     } else { 
-       elements.passage.style.display = 'none'; 
-       elements.question.classList.remove('with-passage');
-     }
-     
-     /* 문제 이미지 설정 */
-     elements.questionImages.innerHTML = "";
-     const imgContainer = document.createElement('div');
-     imgContainer.className = "image-container";
-     
-     q.images.forEach((imgUrl, idx) => {
-       const img = document.createElement('img');
-       img.src = imgUrl;
-       img.alt = `문제 ${qIndex + 1} 이미지 ${idx + 1}`;
-       img.className = "question-image";
-       img.onload = function() {
-         if (idx > 0) {
-           const prevImg = imgContainer.querySelector(`img[alt="문제 ${qIndex + 1} 이미지 ${idx}"]`);
-           if (prevImg) { prevImg.style.marginBottom = "0"; }
-         }
-       };
-       imgContainer.appendChild(img);
-     });
-     elements.questionImages.appendChild(imgContainer);
-     
-     if(q.type === "객관식") {
-       elements.multipleChoice.style.display = "flex";
-       elements.shortAnswer.style.display = "none";
-       
-       // 옵션 설정
-       let options = [];
-       if(q.customOptions && Array.isArray(q.customOptions) && q.customOptions.length > 0) {
-         options = q.customOptions.slice(0, 5);                           /* 최대 5개 커스텀 옵션 */
-       } else { 
-         options = ["1", "2", "3", "4", "5"];                             /* 기본 옵션 */
-       }
-       
-       // 옵션 너비 계산 로직
-       const isNumericOptions = options.every(opt => /^[1-5]$/.test(opt.trim()));
-       const minWidth = 60;                                               /* 숫자만 있을 때 적절한 크기 */
-       const maxWidth = 250;                                              /* 최대 너비 제한 */
-       let optionWidth;
-       
-       if (isNumericOptions) {
-         optionWidth = minWidth;                                          /* 기본형(1,2,3,4,5) 선택지는 작은 크기 적용 */
-       } else {
-         /* 텍스트 선택지는 최장 길이에 맞추되 범위 내에서 제한 */
-         let maxLen = 0;
-         options.forEach(opt => { if(opt.length > maxLen) maxLen = opt.length; });
-         
-         /* 너비 계산: 글자수 * 글자 너비 + 여백 */
-         const contentWidth = (maxLen * 10) + 30;
-         
-         /* 최종 너비: 최소-최대 범위 내에서 결정 */
-         optionWidth = Math.max(minWidth, Math.min(contentWidth, maxWidth));
-       }
-       
-       /* 옵션 너비가 컨테이너의 30% 이상이면 세로 배치로 전환 */
-       if(optionWidth >= elements.questionContainer.clientWidth * 0.3) {
-         elements.multipleChoice.classList.add('vertical');
-       } else { 
-         elements.multipleChoice.classList.remove('vertical'); 
-       }
-       
-       /* 옵션 생성 */
-       options.forEach((optText, index) => {
-         const optDiv = document.createElement('div');
-         optDiv.className = "option";
-         optDiv.style.width = optionWidth + "px";
-         optDiv.setAttribute("data-option", (index+1).toString());
-         optDiv.textContent = optText;
-         optDiv.addEventListener('click', handleOptionClick);
-         elements.multipleChoice.appendChild(optDiv);
-       });
-       
-       /* 복수정답 여부에 따라 확인 버튼 생성 */
-       if(Array.isArray(q.answer) && q.answer.length > 1) { 
-         createConfirmButton(handleMultipleChoiceCheck); 
-       }
-     } else if(q.type === "주관식") {
-       elements.multipleChoice.style.display = "none";
-       elements.shortAnswer.style.display = "flex";
-       let inputHTML = '<div class="input-answer-fields">';
-       
-       if(Array.isArray(q.answer)) {
-         /* 복수 입력 필드 생성 로직 */
-         let maxLen = 0;
-         q.answer.slice(0,5).forEach(ans => { if(ans.toString().length > maxLen) maxLen = ans.toString().length; });
-         const baseWidth = 300, computedWidth = (maxLen * 10) + 20;
-         const finalWidth = Math.max(baseWidth, computedWidth);
-         
-         for(let i = 0; i < Math.min(q.answer.length,5); i++) {
-           const placeholder = (q.placeholders && q.placeholders[i]) ? q.placeholders[i] : `답변 ${i+1}`;
-           inputHTML += `<div style="width: ${finalWidth}px; margin: 5px 0;">
-                           <div style="text-align: left; margin-bottom: 3px; font-size: 0.9rem; color: #666;">답변 ${i+1}</div>
-                           <input class="answer-input" id="answerInput${i+1}" placeholder="${placeholder}" type="text"/>
-                         </div>`;
-         }
-      } else {
-          /* 단일 입력 필드 생성 */
-          inputHTML += `<div style="width: 300px; margin: 5px 0;">
-                          <input class="answer-input" id="answerInput" placeholder="답을 입력하세요" type="text"/>
-                        </div>`;
-        }
-        inputHTML += '</div>';
-        elements.shortAnswer.innerHTML = inputHTML;
-        
-        /* 입력 필드에 이벤트 리스너 추가 */
-        document.querySelectorAll('.answer-input').forEach(input => {
-          input.addEventListener('input', handleShortAnswerInput);
-          input.addEventListener('keyup', (e) => {
-            if(e.key === 'Enter' && document.getElementById('checkButton') && !document.getElementById('checkButton').disabled) {
-              document.getElementById('checkButton').click();
-            }
-          });
-        });
-        
-        createConfirmButton(handleCheckButtonClick);
-      }
-      
-      /* 마지막 문제인 경우 완료 버튼으로 변경 */
-      if(qIndex === questions.length - 1) {
-        elements.nextButton.textContent = COMPLETE_BUTTON_TEXT;
-        elements.nextButton.classList.add('complete-button');
-      } else {
-        elements.nextButton.textContent = NEXT_BUTTON_TEXT;
-        elements.nextButton.classList.remove('complete-button');
-      }
+      const colors = [
+        getComputedStyle(document.documentElement).getPropertyValue('--particle-color-1').trim(),
+        getComputedStyle(document.documentElement).getPropertyValue('--particle-color-2').trim(),
+        getComputedStyle(document.documentElement).getPropertyValue('--particle-color-3').trim(),
+        getComputedStyle(document.documentElement).getPropertyValue('--particle-color-4').trim(),
+        getComputedStyle(document.documentElement).getPropertyValue('--particle-color-5').trim()
+      ];
+      particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+      /* 랜덤 크기 설정 */
+      const minSize = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-size-min'));
+      const maxSize = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-size-max'));
+      const size = Math.random() * (maxSize - minSize) + minSize;
+      particle.style.width = `${size}px`;
+      particle.style.height = `${size}px`;
+
+      /* 랜덤 방향 및 거리 설정 */
+      const angle = Math.random() * Math.PI * 2;
+      const minDistance = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-distance-min'));
+      const maxDistance = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--particle-distance-max'));
+      const distance = Math.random() * (maxDistance - minDistance) + minDistance;
+      const translateX = Math.cos(angle) * distance;
+      const translateY = Math.sin(angle) * distance;
+
+      particle.style.setProperty('--translateX', `${translateX}px`);
+      particle.style.setProperty('--translateY', `${translateY}px`);
+      particle.style.left = `${centerX - rect.left}px`;
+      particle.style.top = `${centerY - rect.top}px`;
+      particle.style.animationDelay = `${Math.random() * 0.3}s`;
+
+      container.appendChild(particle);
+
+      /* 애니메이션 후 파티클 제거 */
+      const animationDuration = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--particle-animation-duration')) * 1000 + 500;
+      setTimeout(() => { particle.remove(); }, animationDuration);
     }
-    
-    /* 확인 버튼 생성 함수 */
-    function createConfirmButton(callback) {
-      const existing = document.getElementById('checkButton');
-      if(existing && existing.parentNode) { existing.parentNode.removeChild(existing); }
-      
-      const btn = document.createElement('button');
-      btn.className = "btn"; 
-      btn.id = "checkButton"; 
-      btn.textContent = CHECK_BUTTON_TEXT; 
-      btn.disabled = true;
-      btn.addEventListener('click', callback);
-      
-      if(elements.multipleChoice.style.display !== "none") {
-        elements.multipleChoice.parentNode.insertBefore(btn, elements.multipleChoice.nextSibling);
-      } else {
-        elements.shortAnswer.parentNode.insertBefore(btn, elements.shortAnswer.nextSibling);
-      }
+  }
+
+  // 완료 애니메이션 실행
+  function triggerCompletionAnimation() {
+    return new Promise(resolve => {
+      elements.progressBar.style.width = "100%";                       /* 진행 바 100%로 설정 */
+      setTimeout(() => {
+        elements.progressBar.classList.add('completed-animation');   /* 애니메이션 클래스 추가 */
+        createCompletionParticles();                                       /* 파티클 효과 생성 */
+        const animationDuration = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--complete-animation-duration')) * 1000 + 300;
+        setTimeout(() => { resolve(); }, animationDuration);        /* 애니메이션 완료 후 Promise 해결 */
+      }, 300);
+    });
+  }
+
+  // 남은 기회 업데이트
+  function updateChancesDisplay() {
+    elements.chance1.className = remainingChances >= 1 ? 'chance-indicator' : 'chance-indicator lost';
+    elements.chance2.className = remainingChances >= 2 ? 'chance-indicator' : 'chance-indicator lost';
+    elements.chance3.className = remainingChances >= 3 ? 'chance-indicator' : 'chance-indicator lost';
+  }
+
+  // 문제 로드 함수
+  function loadQuestion(qIndex) {
+    answerSubmitted = false;                                           /* 답변 제출 상태 초기화 */
+    selectedOptions = [];                                              /* 선택된 옵션 초기화 */
+    elements.nextButton.disabled = true;                               /* 다음문제 버튼 비활성화 */
+
+    /* 기존 확인 버튼 제거 */
+    const existingConfirm = document.getElementById('checkButton');
+    if(existingConfirm && existingConfirm.parentNode) { existingConfirm.parentNode.removeChild(existingConfirm); }
+
+    /* 객관식/주관식 영역 초기화 */
+    elements.multipleChoice.innerHTML = "";
+    elements.multipleChoice.style.display = "none"; // Hide by default
+    elements.shortAnswer.innerHTML = "";
+    elements.shortAnswer.style.display = "none"; // Hide by default
+
+    const q = questions[qIndex];                                       /* 현재 문제 가져오기 */
+    if(!q) { endGame(true); return; }                                  /* 문제가 없으면 게임 종료 */
+
+    elements.questionNumber.textContent = `문제 ${qIndex + 1}`;        /* 문제 번호 표시 */
+
+    /* 보기(passage) 설정 */
+    if(q.passage) {
+      elements.passage.style.display = 'block';
+      elements.passage.innerHTML = `<img src="${q.passage}" alt="보기" style="width:100%;">`;
+      elements.question.classList.add('with-passage');
+    } else {
+      elements.passage.style.display = 'none';
+      elements.question.classList.remove('with-passage');
     }
-    
-    /* 객관식 옵션 클릭 처리 */
-    function handleOptionClick(e) {
-      if(gameOver || answerSubmitted) return;
-      
-      const selectedOption = e.currentTarget;
-      const q = questions[currentQuestion];
-      const userAnswer = selectedOption.getAttribute('data-option');
-      
-      if(Array.isArray(q.answer) && q.answer.length > 1) {
-        /* 복수 선택 로직 */
-        if(selectedOptions.includes(userAnswer)) {
-          selectedOptions = selectedOptions.filter(opt => opt !== userAnswer);
-          selectedOption.classList.remove("selected");
-        } else {
-          selectedOptions.push(userAnswer);
-          selectedOption.classList.add("selected");
-        }
-        
-        /* 하나 이상 선택되었을 때 확인 버튼 활성화 */
-        const confirmBtn = document.getElementById('checkButton');
-        if(confirmBtn) { confirmBtn.disabled = (selectedOptions.length === 0); }
+
+    /* 문제 이미지 설정 */
+    elements.questionImages.innerHTML = "";
+    const imgContainer = document.createElement('div');
+    imgContainer.className = "image-container";
+
+    q.images.forEach((imgUrl, idx) => {
+      const img = document.createElement('img');
+      img.src = imgUrl;
+      img.alt = `문제 ${qIndex + 1} 이미지 ${idx + 1}`;
+      img.className = "question-image";
+      img.onload = function() {
+        // Adjust margin if needed, especially for stacked images
+      };
+      imgContainer.appendChild(img);
+    });
+    elements.questionImages.appendChild(imgContainer);
+
+    if(q.type === "객관식") {
+      elements.multipleChoice.style.display = "flex"; // Show multiple choice area
+
+      // 옵션 설정
+      let options = [];
+      if(q.customOptions && Array.isArray(q.customOptions) && q.customOptions.length > 0) {
+        options = q.customOptions.slice(0, 5); // 최대 5개 커스텀 옵션
       } else {
-        /* 단일 선택 로직 - 바로 정답 확인 */
-        answerSubmitted = true;
-        
-        if(userAnswer === q.answer.toString()) {
-          /* 정답인 경우 */
-          selectedOption.classList.add("correct");
-          score += q.score || defaultScore;
-          elements.currentScore.textContent = score;
-        } else {
-          /* 오답인 경우 */
-          selectedOption.classList.add("incorrect");
-          remainingChances--;
-          updateChancesDisplay();
+        // customOptions가 없을 경우 기본 옵션 (예시용, 실제로는 customOptions 필수일 수 있음)
+        options = ["1", "2", "3", "4", "5"];
+      }
+
+      // Determine layout (vertical or horizontal) - simplified
+      elements.multipleChoice.classList.remove('vertical'); // Default to horizontal
+
+      /* === 객관식 옵션 생성 === */
+      options.forEach((optText, index) => {
+        const optDiv = document.createElement('div');
+        optDiv.className = "option";
+        optDiv.setAttribute("data-option", (index + 1).toString());
+
+        if (q.customOptions) {
+          // customOptions가 있는 경우에만 MathJax 렌더링 적용
+          optDiv.className = "option has-latex"; // has-latex 클래스 추가
+          let processedText = optText
+            .replace(/\\Wlim/g, '\\lim')
+            .replace(/\\Wto/g, '\\to')
+            .replace(/\\Winfty/g, '\\infty')
+            .replace(/\\Walpha/g, '\\alpha')
+            .replace(/\\Wbeta/g, '\\beta');
+
+          optDiv.innerHTML = `$${processedText}$`;
           
-          if(remainingChances <= 0) { 
-            setTimeout(() => { endGame(false); }, parseInt(getComputedStyle(document.documentElement).getPropertyValue('--feedback-delay'))); 
-            return; 
+          // MathJax 수동 렌더링 트리거
+          if (typeof MathJax !== 'undefined') {
+            MathJax.typesetPromise([optDiv]).catch((err) => {
+              console.error("MathJax rendering error:", err);
+              optDiv.textContent = optText;
+            });
+          } else {
+            console.warn("MathJax not loaded yet");
+            optDiv.textContent = optText;
           }
+        } else {
+          // customOptions가 없는 경우 일반 텍스트로 표시
+          optDiv.textContent = optText;
         }
-        
-        /* 사용자 답변 기록 */
-        userAnswers.push({
-          questionId: q.id,
-          userAnswer: userAnswer,
-          correctAnswer: q.answer,
-          isCorrect: (userAnswer === q.answer.toString()),
-          score: (userAnswer === q.answer.toString()) ? (q.score || defaultScore) : 0
+
+        optDiv.addEventListener('click', handleOptionClick);
+        elements.multipleChoice.appendChild(optDiv);
+      });
+      /* === KaTeX 렌더링 수정 끝 === */
+
+      /* 복수정답 여부에 따라 확인 버튼 생성 */
+      if(Array.isArray(q.answer) && q.answer.length > 1) {
+        createConfirmButton(handleMultipleChoiceCheck);
+      }
+    } else if(q.type === "주관식") {
+      elements.shortAnswer.style.display = "flex"; // Show short answer area
+      let inputHTML = '<div class="input-answer-fields">';
+
+      // --- 수정 1: 너비 고정 로직 ---
+      const fixedWidth = "350px"; // 고정 너비 설정
+
+      if(Array.isArray(q.answer)) {
+          /* 복수 입력 필드 생성 로직 */
+          for(let i = 0; i < Math.min(q.answer.length, 5); i++) {
+              const placeholder = (q.placeholders && Array.isArray(q.placeholders) && q.placeholders[i])
+                                  ? q.placeholders[i]
+                                  : `답변 ${i+1}`; // Default for multiple
+              // 너비 고정 및 중앙 정렬 위해 margin: 5px auto 추가
+              inputHTML += `<div style="width: ${fixedWidth}; margin: 5px auto;">
+                              <div style="text-align: left; margin-bottom: 3px; font-size: 0.9rem; color: #666;">답변 ${i+1}</div>
+                              <input class="answer-input" id="answerInput${i+1}" placeholder="${placeholder}" type="text"/>
+                            </div>`;
+          }
+      } else {
+          /* 단일 입력 필드 생성 로직 */
+          let singlePlaceholder = "답을 입력하세요"; // 기본 플레이스홀더
+          if (q.placeholders) {
+              if (typeof q.placeholders === 'string') {
+                  singlePlaceholder = q.placeholders;
+              } else if (Array.isArray(q.placeholders) && q.placeholders.length > 0 && q.placeholders[0]) {
+                  singlePlaceholder = q.placeholders[0];
+              }
+          }
+          // 너비 고정 및 중앙 정렬 위해 margin: 5px auto 추가
+          inputHTML += `<div style="width: ${fixedWidth}; margin: 5px auto;">
+                           <input class="answer-input" id="answerInput" placeholder="${singlePlaceholder}" type="text"/>
+                         </div>`;
+      }
+      // --- 수정 끝 ---
+
+      inputHTML += '</div>';
+      elements.shortAnswer.innerHTML = inputHTML;
+
+      /* 입력 필드에 이벤트 리스너 추가 */
+      document.querySelectorAll('.answer-input').forEach(input => {
+        input.addEventListener('input', handleShortAnswerInput);
+        input.addEventListener('keyup', (e) => {
+          // Allow Enter key submission if checkButton exists and is enabled
+          const checkBtn = document.getElementById('checkButton');
+          if(e.key === 'Enter' && checkBtn && !checkBtn.disabled) {
+            checkBtn.click();
+          }
         });
-        
-        elements.nextButton.disabled = false;  /* 다음문제 버튼 활성화 */
-      }
+      });
+
+      createConfirmButton(handleCheckButtonClick); // Create check button for short answers
     }
-    
-    /* 복수 객관식 확인 버튼 처리 */
-    function handleMultipleChoiceCheck() {
-      if(gameOver || answerSubmitted) return;
-      
-      const q = questions[currentQuestion];
-      answerSubmitted = true;
-      
-      /* 정답 확인 */
-      let allCorrect = true;
-      
-      /* 선택한 개수와 정답 개수가 다르면 오답 */
-      if(selectedOptions.length !== q.answer.length) { allCorrect = false; }
-      else { 
-        /* 선택한 모든 항목이 정답에 포함되어 있는지 확인 */
-        selectedOptions.forEach(opt => { 
-          if(!q.answer.includes(opt)) { allCorrect = false; } 
-        }); 
-      }
-      
-      /* 옵션별 정답/오답 표시 */
-      document.querySelectorAll('.option').forEach(opt => {
-        const optVal = opt.getAttribute('data-option');
-        
-        if(selectedOptions.includes(optVal)) {
-          if(q.answer.includes(optVal)) { 
-            opt.classList.add("correct"); 
-          } else { 
-            opt.classList.add("incorrect"); 
-          }
-        }
-      });
-      
-      if(allCorrect) { 
-        /* 모두 정답인 경우 */
-        score += q.score || defaultScore; 
-        elements.currentScore.textContent = score; 
-      } else { 
-        /* 오답이 있는 경우 */
-        remainingChances--; 
-        updateChancesDisplay(); 
-        
-        if(remainingChances <= 0) { 
-          setTimeout(() => { endGame(false); }, parseInt(getComputedStyle(document.documentElement).getPropertyValue('--feedback-delay'))); 
-          return; 
-        } 
-      }
-      
-      /* 확인 버튼 비활성화, 다음 버튼 활성화 */
-      document.getElementById('checkButton').disabled = true;
-      elements.nextButton.disabled = false;
-      
-      /* 사용자 답변 기록 */
-      userAnswers.push({
-        questionId: q.id,
-        userAnswer: selectedOptions,
-        correctAnswer: q.answer,
-        isCorrect: allCorrect,
-        score: allCorrect ? (q.score || defaultScore) : 0
-      });
+
+    /* 마지막 문제인 경우 완료 버튼으로 변경 */
+    if(qIndex === questions.length - 1) {
+      elements.nextButton.textContent = COMPLETE_BUTTON_TEXT;
+      elements.nextButton.classList.add('complete-button');
+    } else {
+      elements.nextButton.textContent = NEXT_BUTTON_TEXT;
+      elements.nextButton.classList.remove('complete-button');
     }
-    
-    /* 주관식 입력 처리 */
-    function handleShortAnswerInput() {
-      if(gameOver || answerSubmitted) return;
-      
-     /* 모든 입력 필드가 채워졌는지 확인 */
-      const inputs = document.querySelectorAll('.answer-input');
-      let allFilled = true;
-      
-      inputs.forEach(input => { 
-        if(input.value.trim() === "") { allFilled = false; } 
-      });
-      
-      /* 확인 버튼 활성화/비활성화 */
+  }
+
+  /* 확인 버튼 생성 함수 */
+  function createConfirmButton(callback) {
+    const existing = document.getElementById('checkButton');
+    if(existing && existing.parentNode) { existing.parentNode.removeChild(existing); }
+
+    const btn = document.createElement('button');
+    btn.className = "btn";
+    btn.id = "checkButton";
+    btn.textContent = CHECK_BUTTON_TEXT;
+    btn.disabled = true; // Initially disabled
+    btn.addEventListener('click', callback);
+
+    // --- 수정 3: 확인 버튼 위치 변경 ---
+    // Insert the button before the progress bar container
+    // elements.progressContainer는 DOM 요소 참조 객체에 이미 정의되어 있음
+    elements.progressContainer.parentNode.insertBefore(btn, elements.progressContainer);
+    // --- 수정 끝 ---
+  }
+
+  /* 객관식 옵션 클릭 처리 */
+  function handleOptionClick(e) {
+    if(gameOver || answerSubmitted) return;
+
+    const selectedOption = e.currentTarget;
+    const q = questions[currentQuestion];
+    const userAnswer = selectedOption.getAttribute('data-option'); // 선택한 옵션의 번호 (1, 2, 3...)
+
+    if(Array.isArray(q.answer) && q.answer.length > 1) {
+      /* 복수 선택 로직 - 기존과 동일하게 유지 */
+      if(selectedOptions.includes(userAnswer)) {
+        selectedOptions = selectedOptions.filter(opt => opt !== userAnswer);
+        selectedOption.classList.remove("selected");
+      } else {
+        selectedOptions.push(userAnswer);
+        selectedOption.classList.add("selected");
+      }
+
+      /* 하나 이상 선택되었을 때 확인 버튼 활성화 */
       const confirmBtn = document.getElementById('checkButton');
-      if(confirmBtn) { confirmBtn.disabled = !allFilled; }
-    }
-    
-    /* 주관식 확인 버튼 처리 */
-    function handleCheckButtonClick() {
-      if(gameOver || answerSubmitted) return;
-      
-      const q = questions[currentQuestion];
-      const inputs = document.querySelectorAll('.answer-input');
+      if(confirmBtn) { confirmBtn.disabled = (selectedOptions.length === 0); }
+    } else {
+      /* 단일 선택 로직 - 휘매쓰 학습용 방식으로 수정 */
       answerSubmitted = true;
       
-      let isCorrect = true;
-      let userAnswerArray = [];
-      
-      /* 각 입력 필드별 정답 확인 */
-      inputs.forEach((input, index) => {
-        const userAns = input.value.trim().toLowerCase();
-        userAnswerArray.push(userAns);
-        
-        let correctAns = "";
-        if(Array.isArray(q.answer)) { 
-          correctAns = q.answer[index].toString().toLowerCase(); 
-        } else { 
-          correctAns = q.answer.toString().toLowerCase(); 
-        }
-        
-        // 모든 공백을 제거하여 비교 (앞, 뒤, 중간 모두 무시)
-        if(userAns.replace(/\s+/g, '') !== correctAns.replace(/\s+/g, '')) { 
-          isCorrect = false; 
-          input.classList.add('incorrect');
-        } else { 
-          input.classList.add('correct');
-        }
-      });
-      
-      if(isCorrect) { 
+      // 답안 비교 로직 수정
+      const isCorrect = userAnswer === String(q.answer);
+
+      if(isCorrect) {
         /* 정답인 경우 */
-        score += q.score || defaultScore; 
-        elements.currentScore.textContent = score; 
-      } else { 
+        selectedOption.classList.add("correct");
+        score += q.score || defaultScore;
+        elements.currentScore.textContent = score;
+      } else {
         /* 오답인 경우 */
-        remainingChances--; 
-        updateChancesDisplay(); 
-        
-        if(remainingChances <= 0) { 
-          setTimeout(() => { endGame(false); }, parseInt(getComputedStyle(document.documentElement).getPropertyValue('--feedback-delay'))); 
-          return; 
-        } 
+        selectedOption.classList.add("incorrect");
       }
-      
-      /* 확인 버튼 비활성화, 다음 버튼 활성화 */
-      document.getElementById('checkButton').disabled = true;
-      elements.nextButton.disabled = false;
-      
+
       /* 사용자 답변 기록 */
       userAnswers.push({
         questionId: q.id,
-        userAnswer: userAnswerArray,
+        userAnswer: userAnswer,
         correctAnswer: q.answer,
         isCorrect: isCorrect,
         score: isCorrect ? (q.score || defaultScore) : 0
       });
-    }
-    
-    /* 다음 문제 버튼 이벤트 */
-    elements.nextButton.addEventListener('click', () => {
-      currentQuestion++;
-      completedQuestions++;
-      updateProgressBar();
-      
-      if(currentQuestion >= questions.length) { 
-        triggerCompletionAnimation().then(() => { endGame(true); });
-      } else { 
-        loadQuestion(currentQuestion); 
-      }
-    });
-    
-    /* 시작 버튼 이벤트 */
-    elements.startButton.addEventListener('click', () => {
-      const name = elements.playerName.value.trim();
-      if(name === "") return;  /* 이름이 입력되지 않으면 시작하지 않음 */
-      
-      player = name;
-      elements.startSection.style.display = "none";
-      elements.gameSection.style.display = "block";
-      timerFunctions.start();  /* 타이머 시작 */
-      resetGame();            /* 게임 초기화 */
-      loadQuestion(currentQuestion);  /* 첫 문제 로드 */
-    });
-    
-    /* 서버 데이터 전송 함수 */
-    async function sendDataWithRetry(url, data, { timeout = 5000, retries = 3 } = {}) {
-      for (let attempt = 1; attempt <= retries; attempt++) {
-        const controller = new AbortController();
-        const timer = setTimeout(() => controller.abort(), timeout);
-        
-        try {
-          const response = await fetch(url, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data),
-            signal: controller.signal
-          });
-          
-          clearTimeout(timer);
-          const responseData = await response.json();
-          
-          if (response.ok) {
-            return responseData;
-          } else {
-            throw new Error(ERROR_MESSAGE);
-          }
-        } catch (error) {
-          clearTimeout(timer);
-          
-          if (attempt === retries) {
-            throw error;
-          }
 
-          /* 지수 백오프: 시도 횟수에 따라 대기 시간 증가 */
-          await new Promise(res => setTimeout(res, 1000 * attempt));
+      elements.nextButton.disabled = false;
+      document.querySelectorAll('.option').forEach(opt => {
+        opt.style.pointerEvents = 'none';
+      });
+    }
+  }
+
+  /* 복수 객관식 확인 버튼 처리 */
+  function handleMultipleChoiceCheck() {
+    if(gameOver || answerSubmitted) return;
+
+    const q = questions[currentQuestion];
+    answerSubmitted = true;
+
+    /* 정답 확인 */
+    let allCorrect = true;
+    // q.answer가 항상 배열이라고 가정 (복수 선택 문제이므로)
+    const correctAnswers = q.answer.map(String); // Ensure correct answers are strings
+    const userAnswersStr = selectedOptions.map(String); // Ensure user answers are strings
+
+    /* 선택한 개수와 정답 개수가 다르면 오답 */
+    if(userAnswersStr.length !== correctAnswers.length) {
+        allCorrect = false;
+    } else {
+      // Check if every selected answer is in the correct answers array and vice-versa
+      allCorrect = userAnswersStr.every(ans => correctAnswers.includes(ans)) &&
+                   correctAnswers.every(ans => userAnswersStr.includes(ans)); // Ensure both ways match
+    }
+
+    /* 옵션별 정답/오답 표시 */
+    document.querySelectorAll('.option').forEach(opt => {
+      const optVal = opt.getAttribute('data-option');
+      const isSelected = userAnswersStr.includes(optVal);
+      const isCorrectAnswer = correctAnswers.includes(optVal);
+
+      if(isSelected) { // 사용자가 선택한 옵션에 대해서만 피드백
+        if(isCorrectAnswer) {
+          opt.classList.add("correct"); // 선택했고 정답이면 초록색
+        } else {
+          opt.classList.add("incorrect"); // 선택했고 오답이면 빨간색
         }
       }
-    }
-    
-    /* 전송 버튼 이벤트 */
-    elements.submitButton.addEventListener('click', async () => {
-      const game = gameConfig.gameTitle;
-      const name = elements.playerName.value.trim();
-      const finalScore = score, finalElapsedTime = elapsedTime;
-      elements.loadingSpinner.style.display = "flex";
-      elements.serverMessage.textContent = "";
-      elements.serverMessage.className = "server-message";
-      
-      try {
-        await sendDataWithRetry("https://us-central1-record-f420d.cloudfunctions.net/report", {
-          game: game,
-          name: name,
-          score: parseInt(finalScore, 10),
-          elapsedTime: parseInt(finalElapsedTime, 10)
-        }, { timeout: 5000, retries: 3 });
-        
-        // 성공 메시지 표시
-        elements.serverMessage.textContent = SUCCESS_MESSAGE;
-        elements.serverMessage.classList.add("success");
-        elements.submitButton.disabled = true;
-      } catch (error) {
-        // 오류 메시지 표시
-        const errorMsg = (error.message === 'The operation was aborted') ? 
-          NETWORK_ERROR : ERROR_MESSAGE;
-        elements.serverMessage.textContent = errorMsg;
-        elements.serverMessage.classList.add("error");
-        // 실패 시 버튼 활성화 유지 (재시도 가능)
-      } finally {
-        elements.loadingSpinner.style.display = "none";
-      }
+
+      opt.style.pointerEvents = 'none'; // Disable further clicks
     });
-    
-    /* 게임 종료 함수 */
-    function endGame(completed) {
-      gameOver = true;
-      timerFunctions.stop();
-      elements.gameSection.style.display = "none";
-      elements.resultSection.style.display = "block";
-      
-      // 결과 표시 향상
-      const maxScore = questions.reduce((sum, q) => sum + (q.score || defaultScore), 0);
-      elements.finalScore.textContent = `최종 점수: ${score}점 / ${maxScore}점`;
-      elements.finalTime.textContent = `총 소요 시간: ${timerFunctions.formatTime(elapsedTime)}`;
+
+    if(allCorrect) {
+      /* 모두 정답인 경우 */
+      score += q.score || defaultScore;
+      elements.currentScore.textContent = score;
     }
-    
-    /* 페이지 로드 시 초기화 */
-    window.onload = () => {
-      document.getElementById("pageTitle").textContent = gameTitle;
-      elements.gameTitle.textContent = gameTitle;
-      
-      // 배너 설정
-      if (bannerURL) {
-        elements.banner.style.display = "block";
-        elements.banner.innerHTML = `<img src="${bannerURL}" alt="배너">`;
+
+    /* 확인 버튼 비활성화, 다음 버튼 활성화 */
+    const checkBtn = document.getElementById('checkButton');
+    if(checkBtn) checkBtn.disabled = true;
+    elements.nextButton.disabled = false;
+
+    /* 사용자 답변 기록 */
+    userAnswers.push({
+      questionId: q.id,
+      userAnswer: selectedOptions, // Keep original format (array of strings)
+      correctAnswer: q.answer,
+      isCorrect: allCorrect,
+      score: allCorrect ? (q.score || defaultScore) : 0
+    });
+  }
+
+  /* 주관식 입력 처리 (확인 버튼 활성화/비활성화) */
+  function handleShortAnswerInput() {
+    if(gameOver || answerSubmitted) return;
+
+    /* 모든 입력 필드가 채워졌는지 확인 */
+    const inputs = document.querySelectorAll('.answer-input');
+    let allFilled = true;
+
+    inputs.forEach(input => {
+      if(input.value.trim() === "") { allFilled = false; }
+    });
+
+    /* 확인 버튼 활성화/비활성화 */
+    const confirmBtn = document.getElementById('checkButton');
+    if(confirmBtn) { confirmBtn.disabled = !allFilled; }
+  }
+
+  /* 주관식 확인 버튼 처리 */
+  function handleCheckButtonClick() {
+    if(gameOver || answerSubmitted) return;
+
+    const q = questions[currentQuestion];
+    const inputs = document.querySelectorAll('.answer-input');
+    answerSubmitted = true;
+
+    let isCorrectOverall = true;
+    let userAnswerArray = [];
+
+    /* 각 입력 필드별 정답 확인 - 휘매쓰 학습용 방식으로 수정 */
+    inputs.forEach((input, index) => {
+        const userAns = input.value.trim();
+        userAnswerArray.push(userAns);
+
+        const correctAns = Array.isArray(q.answer) ? String(q.answer[index]) : String(q.answer);
+        
+        if(userAns !== correctAns) {
+            isCorrectOverall = false;
+            input.classList.add('incorrect');
+        } else {
+            input.classList.add('correct');
+        }
+        input.readOnly = true;  // 입력 필드 비활성화
+    });
+
+    if(isCorrectOverall) {
+        /* 정답인 경우 */
+        score += q.score || defaultScore;
+        elements.currentScore.textContent = score;
+    }
+
+    /* 다음 버튼 활성화, 확인 버튼 비활성화 */
+    elements.nextButton.disabled = false;
+    const checkButton = document.getElementById('checkButton');
+    if(checkButton) {
+        checkButton.disabled = true;
+        checkButton.style.pointerEvents = 'none';  // 클릭 이벤트도 완전히 차단
+    }
+
+    /* 사용자 답변 기록 */
+    userAnswers.push({
+        questionId: q.id,
+        userAnswer: userAnswerArray,
+        correctAnswer: q.answer,
+        isCorrect: isCorrectOverall,
+        score: isCorrectOverall ? (q.score || defaultScore) : 0
+    });
+  }
+
+  /* 다음 문제 버튼 이벤트 */
+  elements.nextButton.addEventListener('click', () => {
+    // 다음 버튼은 답변이 제출되었거나(answerSubmitted),
+    // 또는 확인 버튼이 없는 단일 선택 객관식에서 정답/오답 피드백이 끝난 후에 활성화됨.
+    // 따라서 answerSubmitted 체크만으로 충분할 수 있으나, 안전하게 로직 유지.
+    if (elements.nextButton.disabled) return; // 비활성화 상태면 아무것도 안 함
+
+    // 문제 풀이 완료 상태 업데이트 및 진행률 반영
+    completedQuestions++;
+    updateProgressBar();
+
+    if (currentQuestion >= questions.length - 1) { // 마지막 문제였으면 게임 종료
+        triggerCompletionAnimation().then(() => { endGame(true); });
+    } else { // 다음 문제 로드
+        currentQuestion++;
+        loadQuestion(currentQuestion);
+    }
+  });
+
+
+  /* 시작 버튼 이벤트 */
+  elements.startButton.addEventListener('click', () => {
+    const name = elements.playerName.value.trim();
+    if(name === "") {
+        alert("이름을 입력해주세요!"); // Provide feedback
+        return;
+    } /* 이름이 입력되지 않으면 시작하지 않음 */
+
+    player = name;
+    elements.startSection.style.display = "none";
+    elements.gameSection.style.display = "block";
+    timerFunctions.start();       /* 타이머 시작 */
+    resetGame();                /* 게임 초기화 */
+    loadQuestion(currentQuestion);  /* 첫 문제 로드 */
+  });
+
+  /* 서버 데이터 전송 함수 */
+  async function sendDataWithRetry(url, data, { timeout = 5000, retries = 3 } = {}) {
+    for (let attempt = 1; attempt <= retries; attempt++) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeout);
+
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+          signal: controller.signal
+        });
+
+        clearTimeout(timer);
+        // Check if response is ok AND content type is JSON before parsing
+        const contentType = response.headers.get("content-type");
+        if (response.ok && contentType && contentType.indexOf("application/json") !== -1) {
+            const responseData = await response.json();
+            return responseData; // Success
+        } else if (response.ok) {
+            // Handle OK response but non-JSON content (if applicable)
+            console.log("Server returned OK but not JSON:", await response.text());
+            return { success: true, message: "Data sent, but response format unclear." }; // Assume success if OK
+        }
+        else {
+          // Handle non-OK responses
+          console.error(`Server error: ${response.status} ${response.statusText}`);
+          throw new Error(`${ERROR_MESSAGE} (Status: ${response.status})`);
+        }
+      } catch (error) {
+        clearTimeout(timer);
+        console.error(`Attempt ${attempt} failed:`, error);
+
+        if (attempt === retries) {
+          if (error.name === 'AbortError') {
+              throw new Error(NETWORK_ERROR + " (Timeout)");
+          }
+           throw error; // Throw the last error
+        }
+        // Wait before retrying (exponential backoff)
+        await new Promise(res => setTimeout(res, 1000 * Math.pow(2, attempt - 1)));
       }
-    };
-  </script>
+    }
+  }
+
+  /* 전송 버튼 이벤트 */
+  elements.submitButton.addEventListener('click', async () => {
+    const game = gameConfig.gameTitle;
+    // const name = elements.playerName.value.trim(); // Name is already in 'player' variable
+    const finalScoreValue = score; // Use the 'score' variable
+    const finalElapsedTimeValue = elapsedTime; // Use the 'elapsedTime' variable
+
+     if (!player) {
+         alert("플레이어 이름 정보가 없습니다. 게임을 다시 시작해주세요.");
+         return;
+     }
+
+    elements.loadingSpinner.style.display = "flex"; // Show spinner
+    elements.serverMessage.textContent = ""; // Clear previous message
+    elements.serverMessage.className = "server-message"; // Reset class
+    elements.submitButton.disabled = true; // Disable button during submission
+
+    try {
+      // Ensure data types are correct for the server
+      const dataToSend = {
+        game: game,
+        name: player,
+        score: parseInt(finalScoreValue, 10),
+        maxScore: questions.length * 10, // 만점 정보 추가
+        elapsedTime: parseInt(finalElapsedTimeValue, 10)
+      };
+
+      console.log("Sending data:", dataToSend); // Log data being sent
+
+      const result = await sendDataWithRetry("https://us-central1-record-f420d.cloudfunctions.net/report", dataToSend, { timeout: 8000, retries: 2 }); // Increased timeout
+
+       console.log("Server response:", result); // Log server response
+
+      // 성공 메시지 표시
+      elements.serverMessage.textContent = SUCCESS_MESSAGE;
+      elements.serverMessage.classList.add("success");
+      // Keep button disabled after successful submission
+    } catch (error) {
+      console.error("Submission failed:", error);
+      // 오류 메시지 표시
+      // Use the error message thrown by sendDataWithRetry or a default
+      elements.serverMessage.textContent = error.message || ERROR_MESSAGE;
+      elements.serverMessage.classList.add("error");
+      elements.submitButton.disabled = false; // Re-enable button on failure to allow retry
+    } finally {
+      elements.loadingSpinner.style.display = "none"; // Hide spinner regardless of outcome
+    }
+  });
+
+  /* 게임 종료 함수 */
+  function endGame(completed) {
+    gameOver = true;
+    timerFunctions.stop();
+    elements.gameSection.style.display = "none";
+    elements.resultSection.style.display = "block";
+
+    // 결과 표시 향상
+    const maxScore = questions.reduce((sum, q) => sum + (q.score || defaultScore), 0);
+    elements.finalScore.innerHTML = `최종 점수: <strong style="color: var(--score-highlight-color); font-size: 1.2em;">${score}</strong>점 / ${maxScore}점`; // Highlight score
+    elements.finalTime.textContent = `총 소요 시간: ${timerFunctions.formatTime(elapsedTime)}`;
+
+    // Reset submit button state
+    elements.submitButton.disabled = false;
+    elements.serverMessage.textContent = '';
+    elements.serverMessage.className = 'server-message';
+  }
+
+  /* 페이지 로드 시 초기화 */
+  window.onload = () => {
+    // 게임 타이틀은 일반 텍스트로 설정 (MathJax 렌더링 없음)
+    document.getElementById("pageTitle").textContent = gameTitle;
+    elements.gameTitle.textContent = gameTitle;
+
+    // Apply text variables from JS consts to elements
+    elements.startButton.textContent = START_BUTTON_TEXT;
+    elements.playerName.placeholder = PLAYER_NAME_PLACEHOLDER;
+    document.querySelector('#startSection .start-title').textContent = START_SCREEN_TITLE; // Assuming the title structure
+    elements.nextButton.textContent = NEXT_BUTTON_TEXT; // Initial state
+    elements.submitButton.textContent = SUBMIT_BUTTON_TEXT;
+    document.querySelector('#resultSection .result-title').textContent = RESULT_TITLE_TEXT; // Assuming the title structure
+
+    // 배너 설정
+    if (bannerURL) {
+      elements.banner.style.display = "block";
+      elements.banner.innerHTML = `<img src="${bannerURL}" alt="배너">`;
+    }
+
+    // Set initial state for chance indicators
+    updateChancesDisplay();
+  };
+ </script>
 </body>
 </html>
